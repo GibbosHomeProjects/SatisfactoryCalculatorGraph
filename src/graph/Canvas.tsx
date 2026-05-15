@@ -18,7 +18,9 @@ import OilPumpNode from "./nodes/OilPumpNode";
 import ResourceWellNode from "./nodes/ResourceWellNode";
 import MachineNode from "./nodes/MachineNode";
 import AwesomeSinkNode from "./nodes/AwesomeSinkNode";
+import FlowEdge from "./edges/FlowEdge";
 
+const edgeTypes = { flow: FlowEdge };
 const nodeTypes = {
   miner: MinerNode,
   "water-extractor": WaterExtractorNode,
@@ -50,7 +52,7 @@ export default function Canvas() {
         id: e.id,
         source: e.fromNodeId,
         target: e.toNodeId,
-        label: e.itemId,
+        type: "flow",
       })),
     [graph.edges],
   );
@@ -73,6 +75,7 @@ export default function Canvas() {
       nodes={rfNodes}
       edges={rfEdges}
       nodeTypes={nodeTypes}
+      edgeTypes={edgeTypes}
       onConnect={onConnect}
       isValidConnection={isValidConnection}
       onNodeClick={(_, n) => selectNode(n.id)}
