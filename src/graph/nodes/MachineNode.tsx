@@ -1,14 +1,14 @@
 import { Handle, Position, type NodeProps } from "@xyflow/react";
 import { useGraphStore } from "../store";
 import { useComputed } from "../useComputed";
-import { sampleGameData } from "@/data/sample";
+import { gameData } from "@/data";
 
 export default function MachineNode({ id }: NodeProps) {
   const node = useGraphStore((s) => s.graph.nodes[id]);
   const computed = useComputed().nodes[id];
   if (!node || node.kind !== "machine") return null;
-  const recipe = sampleGameData.recipes[node.recipeId];
-  const building = recipe ? sampleGameData.buildings[recipe.buildingId] : undefined;
+  const recipe = gameData.recipes[node.recipeId];
+  const building = recipe ? gameData.buildings[recipe.buildingId] : undefined;
   const machineCount = computed?.machineCount ?? 0;
 
   return (
@@ -28,7 +28,7 @@ export default function MachineNode({ id }: NodeProps) {
       <div className="text-xs">Power: {(computed?.totalPowerMW ?? 0).toFixed(1)} MW</div>
       {Object.entries(computed?.outputsPerMin ?? {}).map(([k, v]) => (
         <div key={k} className="text-xs">
-          {sampleGameData.items[k]?.displayName ?? k}: {v.toFixed(1)}/min
+          {gameData.items[k]?.displayName ?? k}: {v.toFixed(1)}/min
         </div>
       ))}
       <Handle type="source" position={Position.Right} />

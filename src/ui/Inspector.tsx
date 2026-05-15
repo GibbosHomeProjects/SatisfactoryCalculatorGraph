@@ -1,5 +1,5 @@
 import { useGraphStore } from "@/graph/store";
-import { sampleGameData } from "@/data/sample";
+import { gameData } from "@/data";
 
 export default function Inspector() {
   const id = useGraphStore((s) => s.selectedNodeId);
@@ -52,8 +52,8 @@ export default function Inspector() {
               value={node.itemId}
               onChange={(e) => update(node.id, { itemId: e.target.value } as never)}
             >
-              {sampleGameData.mineableItemIds
-                .map((id) => sampleGameData.items[id])
+              {gameData.mineableItemIds
+                .map((id) => gameData.items[id])
                 .filter((i): i is NonNullable<typeof i> => !!i)
                 .sort((a, b) => a.displayName.localeCompare(b.displayName))
                 .map((i) => (
@@ -114,7 +114,7 @@ export default function Inspector() {
               value={node.recipeId}
               onChange={(e) => update(node.id, { recipeId: e.target.value } as never)}
             >
-              {Object.values(sampleGameData.recipes)
+              {Object.values(gameData.recipes)
                 .sort((a, b) => Number(a.isAlternate) - Number(b.isAlternate))
                 .map((r) => (
                   <option key={r.id} value={r.id}>

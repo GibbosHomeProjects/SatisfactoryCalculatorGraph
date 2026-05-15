@@ -1,5 +1,5 @@
 import { BaseEdge, EdgeLabelRenderer, getBezierPath, type EdgeProps } from "@xyflow/react";
-import { sampleGameData } from "@/data/sample";
+import { gameData } from "@/data";
 import { useGraphStore } from "../store";
 import { useComputed } from "../useComputed";
 import type { BeltTier, PipeTier } from "@/engine/graph";
@@ -10,10 +10,10 @@ const colourForForm = (form?: string) =>
 function capacityFor(form: string | undefined, tier: BeltTier | PipeTier | undefined): number {
   if (form === "fluid" || form === "gas") {
     const t = (tier ?? "mk2") as PipeTier;
-    return sampleGameData.pipeTierPerMin[t];
+    return gameData.pipeTierPerMin[t];
   }
   const t = (tier ?? "mk5") as BeltTier;
-  return sampleGameData.beltTierPerMin[t];
+  return gameData.beltTierPerMin[t];
 }
 
 function tierOptionsFor(form: string | undefined): string[] {
@@ -26,7 +26,7 @@ export default function FlowEdge(props: EdgeProps) {
   const updateEdgeTier = useGraphStore((s) => s.updateEdgeTier);
   const computed = useComputed().edges[props.id];
   const [path, labelX, labelY] = getBezierPath(props);
-  const item = edge ? sampleGameData.items[edge.itemId] : undefined;
+  const item = edge ? gameData.items[edge.itemId] : undefined;
   const baseColor = colourForForm(item?.form);
   const rate = computed?.amountPerMin ?? 0;
   const cap = capacityFor(item?.form, edge?.tier);

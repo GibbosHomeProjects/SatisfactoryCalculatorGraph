@@ -1,0 +1,5007 @@
+{
+  "recipe-ailimiter-c": {
+    "id": "recipe-ailimiter-c",
+    "displayName": "AI Limiter",
+    "buildingId": "assembler",
+    "isAlternate": false,
+    "durationSeconds": 12,
+    "inputs": [
+      {
+        "itemId": "copper-sheet",
+        "amountPerCycle": 5
+      },
+      {
+        "itemId": "quickwire",
+        "amountPerCycle": 20
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "ai-limiter",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-aliendnacapsule-c": {
+    "id": "recipe-aliendnacapsule-c",
+    "displayName": "Alien DNA Capsule",
+    "buildingId": "constructor-bldg",
+    "isAlternate": false,
+    "durationSeconds": 6,
+    "inputs": [
+      {
+        "itemId": "alien-protein",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "alien-dna-capsule",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-alternate-adheredironplate-c": {
+    "id": "recipe-alternate-adheredironplate-c",
+    "displayName": "Alternate: Adhered Iron Plate",
+    "buildingId": "assembler",
+    "isAlternate": true,
+    "durationSeconds": 16,
+    "inputs": [
+      {
+        "itemId": "iron-plate",
+        "amountPerCycle": 3
+      },
+      {
+        "itemId": "rubber",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "reinforced-iron-plate",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-alternate-alcladcasing-c": {
+    "id": "recipe-alternate-alcladcasing-c",
+    "displayName": "Alternate: Alclad Casing",
+    "buildingId": "assembler",
+    "isAlternate": true,
+    "durationSeconds": 8,
+    "inputs": [
+      {
+        "itemId": "aluminum-ingot",
+        "amountPerCycle": 20
+      },
+      {
+        "itemId": "copper-ingot",
+        "amountPerCycle": 10
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "aluminum-casing",
+        "amountPerCycle": 15
+      }
+    ]
+  },
+  "recipe-alternate-automatedminer-c": {
+    "id": "recipe-alternate-automatedminer-c",
+    "displayName": "Alternate: Automated Miner",
+    "buildingId": "manufacturer",
+    "isAlternate": true,
+    "durationSeconds": 60,
+    "inputs": [
+      {
+        "itemId": "motor",
+        "amountPerCycle": 1
+      },
+      {
+        "itemId": "steel-pipe",
+        "amountPerCycle": 4
+      },
+      {
+        "itemId": "iron-rod",
+        "amountPerCycle": 4
+      },
+      {
+        "itemId": "iron-plate",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "portable-miner",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-alternate-beacon-1-c": {
+    "id": "recipe-alternate-beacon-1-c",
+    "displayName": "Alternate: Crystal Beacon",
+    "buildingId": "manufacturer",
+    "isAlternate": true,
+    "durationSeconds": 120,
+    "inputs": [
+      {
+        "itemId": "steel-beam",
+        "amountPerCycle": 4
+      },
+      {
+        "itemId": "steel-pipe",
+        "amountPerCycle": 16
+      },
+      {
+        "itemId": "crystal-oscillator",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "beacon",
+        "amountPerCycle": 20
+      }
+    ]
+  },
+  "recipe-alternate-boltedframe-c": {
+    "id": "recipe-alternate-boltedframe-c",
+    "displayName": "Alternate: Bolted Frame",
+    "buildingId": "assembler",
+    "isAlternate": true,
+    "durationSeconds": 24,
+    "inputs": [
+      {
+        "itemId": "reinforced-iron-plate",
+        "amountPerCycle": 3
+      },
+      {
+        "itemId": "screw",
+        "amountPerCycle": 56
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "modular-frame",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-alternate-cable-1-c": {
+    "id": "recipe-alternate-cable-1-c",
+    "displayName": "Alternate: Insulated Cable",
+    "buildingId": "assembler",
+    "isAlternate": true,
+    "durationSeconds": 12,
+    "inputs": [
+      {
+        "itemId": "wire",
+        "amountPerCycle": 9
+      },
+      {
+        "itemId": "rubber",
+        "amountPerCycle": 6
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "cable",
+        "amountPerCycle": 20
+      }
+    ]
+  },
+  "recipe-alternate-cable-2-c": {
+    "id": "recipe-alternate-cable-2-c",
+    "displayName": "Alternate: Quickwire Cable",
+    "buildingId": "assembler",
+    "isAlternate": true,
+    "durationSeconds": 24,
+    "inputs": [
+      {
+        "itemId": "quickwire",
+        "amountPerCycle": 3
+      },
+      {
+        "itemId": "rubber",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "cable",
+        "amountPerCycle": 11
+      }
+    ]
+  },
+  "recipe-alternate-circuitboard-1-c": {
+    "id": "recipe-alternate-circuitboard-1-c",
+    "displayName": "Alternate: Silicon Circuit Board",
+    "buildingId": "assembler",
+    "isAlternate": true,
+    "durationSeconds": 24,
+    "inputs": [
+      {
+        "itemId": "copper-sheet",
+        "amountPerCycle": 11
+      },
+      {
+        "itemId": "silica",
+        "amountPerCycle": 11
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "circuit-board",
+        "amountPerCycle": 5
+      }
+    ]
+  },
+  "recipe-alternate-circuitboard-2-c": {
+    "id": "recipe-alternate-circuitboard-2-c",
+    "displayName": "Alternate: Caterium Circuit Board",
+    "buildingId": "assembler",
+    "isAlternate": true,
+    "durationSeconds": 48,
+    "inputs": [
+      {
+        "itemId": "plastic",
+        "amountPerCycle": 10
+      },
+      {
+        "itemId": "quickwire",
+        "amountPerCycle": 30
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "circuit-board",
+        "amountPerCycle": 7
+      }
+    ]
+  },
+  "recipe-alternate-classicbattery-c": {
+    "id": "recipe-alternate-classicbattery-c",
+    "displayName": "Alternate: Classic Battery",
+    "buildingId": "manufacturer",
+    "isAlternate": true,
+    "durationSeconds": 8,
+    "inputs": [
+      {
+        "itemId": "sulfur",
+        "amountPerCycle": 6
+      },
+      {
+        "itemId": "alclad-aluminum-sheet",
+        "amountPerCycle": 7
+      },
+      {
+        "itemId": "plastic",
+        "amountPerCycle": 8
+      },
+      {
+        "itemId": "wire",
+        "amountPerCycle": 12
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "battery",
+        "amountPerCycle": 4
+      }
+    ]
+  },
+  "recipe-alternate-coal-1-c": {
+    "id": "recipe-alternate-coal-1-c",
+    "displayName": "Alternate: Charcoal",
+    "buildingId": "constructor-bldg",
+    "isAlternate": true,
+    "durationSeconds": 4,
+    "inputs": [
+      {
+        "itemId": "wood",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "coal",
+        "amountPerCycle": 10
+      }
+    ]
+  },
+  "recipe-alternate-coal-2-c": {
+    "id": "recipe-alternate-coal-2-c",
+    "displayName": "Alternate: Biocoal",
+    "buildingId": "constructor-bldg",
+    "isAlternate": true,
+    "durationSeconds": 8,
+    "inputs": [
+      {
+        "itemId": "biomass",
+        "amountPerCycle": 5
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "coal",
+        "amountPerCycle": 6
+      }
+    ]
+  },
+  "recipe-alternate-coatedcable-c": {
+    "id": "recipe-alternate-coatedcable-c",
+    "displayName": "Alternate: Coated Cable",
+    "buildingId": "refinery",
+    "isAlternate": true,
+    "durationSeconds": 8,
+    "inputs": [
+      {
+        "itemId": "wire",
+        "amountPerCycle": 5
+      },
+      {
+        "itemId": "heavy-oil-residue",
+        "amountPerCycle": 0.002
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "cable",
+        "amountPerCycle": 9
+      }
+    ]
+  },
+  "recipe-alternate-coatedironcanister-c": {
+    "id": "recipe-alternate-coatedironcanister-c",
+    "displayName": "Alternate: Coated Iron Canister",
+    "buildingId": "assembler",
+    "isAlternate": true,
+    "durationSeconds": 4,
+    "inputs": [
+      {
+        "itemId": "iron-plate",
+        "amountPerCycle": 2
+      },
+      {
+        "itemId": "copper-sheet",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "empty-canister",
+        "amountPerCycle": 4
+      }
+    ]
+  },
+  "recipe-alternate-coatedironplate-c": {
+    "id": "recipe-alternate-coatedironplate-c",
+    "displayName": "Alternate: Coated Iron Plate",
+    "buildingId": "assembler",
+    "isAlternate": true,
+    "durationSeconds": 12,
+    "inputs": [
+      {
+        "itemId": "iron-ingot",
+        "amountPerCycle": 10
+      },
+      {
+        "itemId": "plastic",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "iron-plate",
+        "amountPerCycle": 15
+      }
+    ]
+  },
+  "recipe-alternate-cokesteelingot-c": {
+    "id": "recipe-alternate-cokesteelingot-c",
+    "displayName": "Alternate: Coke Steel Ingot",
+    "buildingId": "foundry",
+    "isAlternate": true,
+    "durationSeconds": 12,
+    "inputs": [
+      {
+        "itemId": "iron-ore",
+        "amountPerCycle": 15
+      },
+      {
+        "itemId": "petroleum-coke",
+        "amountPerCycle": 15
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "steel-ingot",
+        "amountPerCycle": 20
+      }
+    ]
+  },
+  "recipe-alternate-computer-1-c": {
+    "id": "recipe-alternate-computer-1-c",
+    "displayName": "Alternate: Caterium Computer",
+    "buildingId": "manufacturer",
+    "isAlternate": true,
+    "durationSeconds": 16,
+    "inputs": [
+      {
+        "itemId": "circuit-board",
+        "amountPerCycle": 7
+      },
+      {
+        "itemId": "quickwire",
+        "amountPerCycle": 28
+      },
+      {
+        "itemId": "rubber",
+        "amountPerCycle": 12
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "computer",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-alternate-computer-2-c": {
+    "id": "recipe-alternate-computer-2-c",
+    "displayName": "Alternate: Crystal Computer",
+    "buildingId": "assembler",
+    "isAlternate": true,
+    "durationSeconds": 64,
+    "inputs": [
+      {
+        "itemId": "circuit-board",
+        "amountPerCycle": 8
+      },
+      {
+        "itemId": "crystal-oscillator",
+        "amountPerCycle": 3
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "computer",
+        "amountPerCycle": 3
+      }
+    ]
+  },
+  "recipe-alternate-concrete-c": {
+    "id": "recipe-alternate-concrete-c",
+    "displayName": "Alternate: Fine Concrete",
+    "buildingId": "assembler",
+    "isAlternate": true,
+    "durationSeconds": 24,
+    "inputs": [
+      {
+        "itemId": "silica",
+        "amountPerCycle": 3
+      },
+      {
+        "itemId": "limestone",
+        "amountPerCycle": 12
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "concrete",
+        "amountPerCycle": 10
+      }
+    ]
+  },
+  "recipe-alternate-coolingdevice-c": {
+    "id": "recipe-alternate-coolingdevice-c",
+    "displayName": "Alternate: Cooling Device",
+    "buildingId": "blender",
+    "isAlternate": true,
+    "durationSeconds": 32,
+    "inputs": [
+      {
+        "itemId": "heat-sink",
+        "amountPerCycle": 5
+      },
+      {
+        "itemId": "motor",
+        "amountPerCycle": 1
+      },
+      {
+        "itemId": "nitrogen-gas",
+        "amountPerCycle": 0.024
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "cooling-system",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-alternate-copperalloyingot-c": {
+    "id": "recipe-alternate-copperalloyingot-c",
+    "displayName": "Alternate: Copper Alloy Ingot",
+    "buildingId": "foundry",
+    "isAlternate": true,
+    "durationSeconds": 12,
+    "inputs": [
+      {
+        "itemId": "copper-ore",
+        "amountPerCycle": 10
+      },
+      {
+        "itemId": "iron-ore",
+        "amountPerCycle": 5
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "copper-ingot",
+        "amountPerCycle": 20
+      }
+    ]
+  },
+  "recipe-alternate-copperrotor-c": {
+    "id": "recipe-alternate-copperrotor-c",
+    "displayName": "Alternate: Copper Rotor",
+    "buildingId": "assembler",
+    "isAlternate": true,
+    "durationSeconds": 16,
+    "inputs": [
+      {
+        "itemId": "copper-sheet",
+        "amountPerCycle": 6
+      },
+      {
+        "itemId": "screw",
+        "amountPerCycle": 52
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "rotor",
+        "amountPerCycle": 3
+      }
+    ]
+  },
+  "recipe-alternate-crystaloscillator-c": {
+    "id": "recipe-alternate-crystaloscillator-c",
+    "displayName": "Alternate: Insulated Crystal Oscillator",
+    "buildingId": "manufacturer",
+    "isAlternate": true,
+    "durationSeconds": 32,
+    "inputs": [
+      {
+        "itemId": "quartz-crystal",
+        "amountPerCycle": 10
+      },
+      {
+        "itemId": "rubber",
+        "amountPerCycle": 7
+      },
+      {
+        "itemId": "ai-limiter",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "crystal-oscillator",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-alternate-dilutedfuel-c": {
+    "id": "recipe-alternate-dilutedfuel-c",
+    "displayName": "Alternate: Diluted Fuel",
+    "buildingId": "blender",
+    "isAlternate": true,
+    "durationSeconds": 6,
+    "inputs": [
+      {
+        "itemId": "heavy-oil-residue",
+        "amountPerCycle": 0.005
+      },
+      {
+        "itemId": "water",
+        "amountPerCycle": 0.01
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "fuel",
+        "amountPerCycle": 0.01
+      }
+    ]
+  },
+  "recipe-alternate-dilutedpackagedfuel-c": {
+    "id": "recipe-alternate-dilutedpackagedfuel-c",
+    "displayName": "Alternate: Diluted Packaged Fuel",
+    "buildingId": "refinery",
+    "isAlternate": true,
+    "durationSeconds": 2,
+    "inputs": [
+      {
+        "itemId": "heavy-oil-residue",
+        "amountPerCycle": 0.001
+      },
+      {
+        "itemId": "packaged-water",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "packaged-fuel",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-alternate-electricmotor-c": {
+    "id": "recipe-alternate-electricmotor-c",
+    "displayName": "Alternate: Electric Motor",
+    "buildingId": "assembler",
+    "isAlternate": true,
+    "durationSeconds": 16,
+    "inputs": [
+      {
+        "itemId": "electromagnetic-control-rod",
+        "amountPerCycle": 1
+      },
+      {
+        "itemId": "rotor",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "motor",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-alternate-electroaluminumscrap-c": {
+    "id": "recipe-alternate-electroaluminumscrap-c",
+    "displayName": "Alternate: Electrode Aluminum Scrap",
+    "buildingId": "refinery",
+    "isAlternate": true,
+    "durationSeconds": 4,
+    "inputs": [
+      {
+        "itemId": "alumina-solution",
+        "amountPerCycle": 0.012
+      },
+      {
+        "itemId": "petroleum-coke",
+        "amountPerCycle": 4
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "aluminum-scrap",
+        "amountPerCycle": 20
+      },
+      {
+        "itemId": "water",
+        "amountPerCycle": 0.007
+      }
+    ]
+  },
+  "recipe-alternate-electrodecircuitboard-c": {
+    "id": "recipe-alternate-electrodecircuitboard-c",
+    "displayName": "Alternate: Electrode Circuit Board",
+    "buildingId": "assembler",
+    "isAlternate": true,
+    "durationSeconds": 12,
+    "inputs": [
+      {
+        "itemId": "rubber",
+        "amountPerCycle": 6
+      },
+      {
+        "itemId": "petroleum-coke",
+        "amountPerCycle": 9
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "circuit-board",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-alternate-electromagneticcontrolrod-1-c": {
+    "id": "recipe-alternate-electromagneticcontrolrod-1-c",
+    "displayName": "Alternate: Electromagnetic Connection Rod",
+    "buildingId": "assembler",
+    "isAlternate": true,
+    "durationSeconds": 15,
+    "inputs": [
+      {
+        "itemId": "stator",
+        "amountPerCycle": 2
+      },
+      {
+        "itemId": "high-speed-connector",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "electromagnetic-control-rod",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-alternate-encasedindustrialbeam-c": {
+    "id": "recipe-alternate-encasedindustrialbeam-c",
+    "displayName": "Alternate: Encased Industrial Pipe",
+    "buildingId": "assembler",
+    "isAlternate": true,
+    "durationSeconds": 15,
+    "inputs": [
+      {
+        "itemId": "steel-pipe",
+        "amountPerCycle": 7
+      },
+      {
+        "itemId": "concrete",
+        "amountPerCycle": 5
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "encased-industrial-beam",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-alternate-enrichedcoal-c": {
+    "id": "recipe-alternate-enrichedcoal-c",
+    "displayName": "Alternate: Compacted Coal",
+    "buildingId": "assembler",
+    "isAlternate": true,
+    "durationSeconds": 12,
+    "inputs": [
+      {
+        "itemId": "coal",
+        "amountPerCycle": 5
+      },
+      {
+        "itemId": "sulfur",
+        "amountPerCycle": 5
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "compacted-coal",
+        "amountPerCycle": 5
+      }
+    ]
+  },
+  "recipe-alternate-fertileuranium-c": {
+    "id": "recipe-alternate-fertileuranium-c",
+    "displayName": "Alternate: Fertile Uranium",
+    "buildingId": "blender",
+    "isAlternate": true,
+    "durationSeconds": 12,
+    "inputs": [
+      {
+        "itemId": "uranium",
+        "amountPerCycle": 5
+      },
+      {
+        "itemId": "uranium-waste",
+        "amountPerCycle": 5
+      },
+      {
+        "itemId": "nitric-acid",
+        "amountPerCycle": 0.003
+      },
+      {
+        "itemId": "sulfuric-acid",
+        "amountPerCycle": 0.005
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "non-fissile-uranium",
+        "amountPerCycle": 20
+      },
+      {
+        "itemId": "water",
+        "amountPerCycle": 0.008
+      }
+    ]
+  },
+  "recipe-alternate-flexibleframework-c": {
+    "id": "recipe-alternate-flexibleframework-c",
+    "displayName": "Alternate: Flexible Framework",
+    "buildingId": "manufacturer",
+    "isAlternate": true,
+    "durationSeconds": 16,
+    "inputs": [
+      {
+        "itemId": "modular-frame",
+        "amountPerCycle": 1
+      },
+      {
+        "itemId": "steel-beam",
+        "amountPerCycle": 6
+      },
+      {
+        "itemId": "rubber",
+        "amountPerCycle": 8
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "versatile-framework",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-alternate-fusedwire-c": {
+    "id": "recipe-alternate-fusedwire-c",
+    "displayName": "Alternate: Fused Wire",
+    "buildingId": "assembler",
+    "isAlternate": true,
+    "durationSeconds": 20,
+    "inputs": [
+      {
+        "itemId": "copper-ingot",
+        "amountPerCycle": 4
+      },
+      {
+        "itemId": "caterium-ingot",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "wire",
+        "amountPerCycle": 30
+      }
+    ]
+  },
+  "recipe-alternate-gunpowder-1-c": {
+    "id": "recipe-alternate-gunpowder-1-c",
+    "displayName": "Alternate: Fine Black Powder",
+    "buildingId": "assembler",
+    "isAlternate": true,
+    "durationSeconds": 16,
+    "inputs": [
+      {
+        "itemId": "sulfur",
+        "amountPerCycle": 2
+      },
+      {
+        "itemId": "compacted-coal",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "black-powder",
+        "amountPerCycle": 4
+      }
+    ]
+  },
+  "recipe-alternate-heatfusedframe-c": {
+    "id": "recipe-alternate-heatfusedframe-c",
+    "displayName": "Alternate: Heat-Fused Frame",
+    "buildingId": "blender",
+    "isAlternate": true,
+    "durationSeconds": 20,
+    "inputs": [
+      {
+        "itemId": "heavy-modular-frame",
+        "amountPerCycle": 1
+      },
+      {
+        "itemId": "aluminum-ingot",
+        "amountPerCycle": 50
+      },
+      {
+        "itemId": "nitric-acid",
+        "amountPerCycle": 0.008
+      },
+      {
+        "itemId": "fuel",
+        "amountPerCycle": 0.01
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "fused-modular-frame",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-alternate-heatsink-1-c": {
+    "id": "recipe-alternate-heatsink-1-c",
+    "displayName": "Alternate: Heat Exchanger",
+    "buildingId": "assembler",
+    "isAlternate": true,
+    "durationSeconds": 6,
+    "inputs": [
+      {
+        "itemId": "aluminum-casing",
+        "amountPerCycle": 3
+      },
+      {
+        "itemId": "rubber",
+        "amountPerCycle": 3
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "heat-sink",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-alternate-heavyflexibleframe-c": {
+    "id": "recipe-alternate-heavyflexibleframe-c",
+    "displayName": "Alternate: Heavy Flexible Frame",
+    "buildingId": "manufacturer",
+    "isAlternate": true,
+    "durationSeconds": 16,
+    "inputs": [
+      {
+        "itemId": "modular-frame",
+        "amountPerCycle": 5
+      },
+      {
+        "itemId": "encased-industrial-beam",
+        "amountPerCycle": 3
+      },
+      {
+        "itemId": "rubber",
+        "amountPerCycle": 20
+      },
+      {
+        "itemId": "screw",
+        "amountPerCycle": 104
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "heavy-modular-frame",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-alternate-heavyoilresidue-c": {
+    "id": "recipe-alternate-heavyoilresidue-c",
+    "displayName": "Alternate: Heavy Oil Residue",
+    "buildingId": "refinery",
+    "isAlternate": true,
+    "durationSeconds": 6,
+    "inputs": [
+      {
+        "itemId": "crude-oil",
+        "amountPerCycle": 0.003
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "heavy-oil-residue",
+        "amountPerCycle": 0.004
+      },
+      {
+        "itemId": "polymer-resin",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-alternate-highspeedconnector-c": {
+    "id": "recipe-alternate-highspeedconnector-c",
+    "displayName": "Alternate: Silicon High-Speed Connector",
+    "buildingId": "manufacturer",
+    "isAlternate": true,
+    "durationSeconds": 40,
+    "inputs": [
+      {
+        "itemId": "quickwire",
+        "amountPerCycle": 60
+      },
+      {
+        "itemId": "silica",
+        "amountPerCycle": 25
+      },
+      {
+        "itemId": "circuit-board",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "high-speed-connector",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-alternate-highspeedwiring-c": {
+    "id": "recipe-alternate-highspeedwiring-c",
+    "displayName": "Alternate: Automated Speed Wiring",
+    "buildingId": "manufacturer",
+    "isAlternate": true,
+    "durationSeconds": 32,
+    "inputs": [
+      {
+        "itemId": "stator",
+        "amountPerCycle": 2
+      },
+      {
+        "itemId": "wire",
+        "amountPerCycle": 40
+      },
+      {
+        "itemId": "high-speed-connector",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "automated-wiring",
+        "amountPerCycle": 4
+      }
+    ]
+  },
+  "recipe-alternate-ingotiron-c": {
+    "id": "recipe-alternate-ingotiron-c",
+    "displayName": "Alternate: Iron Alloy Ingot",
+    "buildingId": "foundry",
+    "isAlternate": true,
+    "durationSeconds": 6,
+    "inputs": [
+      {
+        "itemId": "iron-ore",
+        "amountPerCycle": 2
+      },
+      {
+        "itemId": "copper-ore",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "iron-ingot",
+        "amountPerCycle": 5
+      }
+    ]
+  },
+  "recipe-alternate-ingotsteel-1-c": {
+    "id": "recipe-alternate-ingotsteel-1-c",
+    "displayName": "Alternate: Solid Steel Ingot",
+    "buildingId": "foundry",
+    "isAlternate": true,
+    "durationSeconds": 3,
+    "inputs": [
+      {
+        "itemId": "iron-ingot",
+        "amountPerCycle": 2
+      },
+      {
+        "itemId": "coal",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "steel-ingot",
+        "amountPerCycle": 3
+      }
+    ]
+  },
+  "recipe-alternate-ingotsteel-2-c": {
+    "id": "recipe-alternate-ingotsteel-2-c",
+    "displayName": "Alternate: Compacted Steel Ingot",
+    "buildingId": "foundry",
+    "isAlternate": true,
+    "durationSeconds": 16,
+    "inputs": [
+      {
+        "itemId": "iron-ore",
+        "amountPerCycle": 6
+      },
+      {
+        "itemId": "compacted-coal",
+        "amountPerCycle": 3
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "steel-ingot",
+        "amountPerCycle": 10
+      }
+    ]
+  },
+  "recipe-alternate-instantplutoniumcell-c": {
+    "id": "recipe-alternate-instantplutoniumcell-c",
+    "displayName": "Alternate: Instant Plutonium Cell",
+    "buildingId": "particle-accelerator",
+    "isAlternate": true,
+    "durationSeconds": 120,
+    "inputs": [
+      {
+        "itemId": "non-fissile-uranium",
+        "amountPerCycle": 150
+      },
+      {
+        "itemId": "aluminum-casing",
+        "amountPerCycle": 20
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "encased-plutonium-cell",
+        "amountPerCycle": 20
+      }
+    ]
+  },
+  "recipe-alternate-instantscrap-c": {
+    "id": "recipe-alternate-instantscrap-c",
+    "displayName": "Alternate: Instant Scrap",
+    "buildingId": "blender",
+    "isAlternate": true,
+    "durationSeconds": 6,
+    "inputs": [
+      {
+        "itemId": "bauxite",
+        "amountPerCycle": 15
+      },
+      {
+        "itemId": "coal",
+        "amountPerCycle": 10
+      },
+      {
+        "itemId": "sulfuric-acid",
+        "amountPerCycle": 0.005
+      },
+      {
+        "itemId": "water",
+        "amountPerCycle": 0.006
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "aluminum-scrap",
+        "amountPerCycle": 30
+      },
+      {
+        "itemId": "water",
+        "amountPerCycle": 0.005
+      }
+    ]
+  },
+  "recipe-alternate-modularframe-c": {
+    "id": "recipe-alternate-modularframe-c",
+    "displayName": "Alternate: Steeled Frame",
+    "buildingId": "assembler",
+    "isAlternate": true,
+    "durationSeconds": 60,
+    "inputs": [
+      {
+        "itemId": "reinforced-iron-plate",
+        "amountPerCycle": 2
+      },
+      {
+        "itemId": "steel-pipe",
+        "amountPerCycle": 10
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "modular-frame",
+        "amountPerCycle": 3
+      }
+    ]
+  },
+  "recipe-alternate-modularframeheavy-c": {
+    "id": "recipe-alternate-modularframeheavy-c",
+    "displayName": "Alternate: Heavy Encased Frame",
+    "buildingId": "manufacturer",
+    "isAlternate": true,
+    "durationSeconds": 64,
+    "inputs": [
+      {
+        "itemId": "modular-frame",
+        "amountPerCycle": 8
+      },
+      {
+        "itemId": "encased-industrial-beam",
+        "amountPerCycle": 10
+      },
+      {
+        "itemId": "steel-pipe",
+        "amountPerCycle": 36
+      },
+      {
+        "itemId": "concrete",
+        "amountPerCycle": 22
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "heavy-modular-frame",
+        "amountPerCycle": 3
+      }
+    ]
+  },
+  "recipe-alternate-motor-1-c": {
+    "id": "recipe-alternate-motor-1-c",
+    "displayName": "Alternate: Rigour Motor",
+    "buildingId": "manufacturer",
+    "isAlternate": true,
+    "durationSeconds": 48,
+    "inputs": [
+      {
+        "itemId": "rotor",
+        "amountPerCycle": 3
+      },
+      {
+        "itemId": "stator",
+        "amountPerCycle": 3
+      },
+      {
+        "itemId": "crystal-oscillator",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "motor",
+        "amountPerCycle": 6
+      }
+    ]
+  },
+  "recipe-alternate-nuclearfuelrod-1-c": {
+    "id": "recipe-alternate-nuclearfuelrod-1-c",
+    "displayName": "Alternate: Uranium Fuel Unit",
+    "buildingId": "manufacturer",
+    "isAlternate": true,
+    "durationSeconds": 300,
+    "inputs": [
+      {
+        "itemId": "encased-uranium-cell",
+        "amountPerCycle": 100
+      },
+      {
+        "itemId": "electromagnetic-control-rod",
+        "amountPerCycle": 10
+      },
+      {
+        "itemId": "crystal-oscillator",
+        "amountPerCycle": 3
+      },
+      {
+        "itemId": "beacon",
+        "amountPerCycle": 6
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "uranium-fuel-rod",
+        "amountPerCycle": 3
+      }
+    ]
+  },
+  "recipe-alternate-ocsupercomputer-c": {
+    "id": "recipe-alternate-ocsupercomputer-c",
+    "displayName": "Alternate: OC Supercomputer",
+    "buildingId": "assembler",
+    "isAlternate": true,
+    "durationSeconds": 20,
+    "inputs": [
+      {
+        "itemId": "radio-control-unit",
+        "amountPerCycle": 3
+      },
+      {
+        "itemId": "cooling-system",
+        "amountPerCycle": 3
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "supercomputer",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-alternate-plastic-1-c": {
+    "id": "recipe-alternate-plastic-1-c",
+    "displayName": "Alternate: Recycled Plastic",
+    "buildingId": "refinery",
+    "isAlternate": true,
+    "durationSeconds": 12,
+    "inputs": [
+      {
+        "itemId": "rubber",
+        "amountPerCycle": 6
+      },
+      {
+        "itemId": "fuel",
+        "amountPerCycle": 0.006
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "plastic",
+        "amountPerCycle": 12
+      }
+    ]
+  },
+  "recipe-alternate-plasticsmartplating-c": {
+    "id": "recipe-alternate-plasticsmartplating-c",
+    "displayName": "Alternate: Plastic Smart Plating",
+    "buildingId": "manufacturer",
+    "isAlternate": true,
+    "durationSeconds": 24,
+    "inputs": [
+      {
+        "itemId": "reinforced-iron-plate",
+        "amountPerCycle": 1
+      },
+      {
+        "itemId": "rotor",
+        "amountPerCycle": 1
+      },
+      {
+        "itemId": "plastic",
+        "amountPerCycle": 3
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "smart-plating",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-alternate-plutoniumfuelunit-c": {
+    "id": "recipe-alternate-plutoniumfuelunit-c",
+    "displayName": "Alternate: Plutonium Fuel Unit",
+    "buildingId": "assembler",
+    "isAlternate": true,
+    "durationSeconds": 120,
+    "inputs": [
+      {
+        "itemId": "encased-plutonium-cell",
+        "amountPerCycle": 20
+      },
+      {
+        "itemId": "pressure-conversion-cube",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "plutonium-fuel-rod",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-alternate-polyesterfabric-c": {
+    "id": "recipe-alternate-polyesterfabric-c",
+    "displayName": "Alternate: Polyester Fabric",
+    "buildingId": "refinery",
+    "isAlternate": true,
+    "durationSeconds": 2,
+    "inputs": [
+      {
+        "itemId": "polymer-resin",
+        "amountPerCycle": 1
+      },
+      {
+        "itemId": "water",
+        "amountPerCycle": 0.001
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "fabric",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-alternate-polymerresin-c": {
+    "id": "recipe-alternate-polymerresin-c",
+    "displayName": "Alternate: Polymer Resin",
+    "buildingId": "refinery",
+    "isAlternate": true,
+    "durationSeconds": 6,
+    "inputs": [
+      {
+        "itemId": "crude-oil",
+        "amountPerCycle": 0.006
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "polymer-resin",
+        "amountPerCycle": 13
+      },
+      {
+        "itemId": "heavy-oil-residue",
+        "amountPerCycle": 0.002
+      }
+    ]
+  },
+  "recipe-alternate-purecateriumingot-c": {
+    "id": "recipe-alternate-purecateriumingot-c",
+    "displayName": "Alternate: Pure Caterium Ingot",
+    "buildingId": "refinery",
+    "isAlternate": true,
+    "durationSeconds": 5,
+    "inputs": [
+      {
+        "itemId": "caterium-ore",
+        "amountPerCycle": 2
+      },
+      {
+        "itemId": "water",
+        "amountPerCycle": 0.002
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "caterium-ingot",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-alternate-purecopperingot-c": {
+    "id": "recipe-alternate-purecopperingot-c",
+    "displayName": "Alternate: Pure Copper Ingot",
+    "buildingId": "refinery",
+    "isAlternate": true,
+    "durationSeconds": 24,
+    "inputs": [
+      {
+        "itemId": "copper-ore",
+        "amountPerCycle": 6
+      },
+      {
+        "itemId": "water",
+        "amountPerCycle": 0.004
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "copper-ingot",
+        "amountPerCycle": 15
+      }
+    ]
+  },
+  "recipe-alternate-pureironingot-c": {
+    "id": "recipe-alternate-pureironingot-c",
+    "displayName": "Alternate: Pure Iron Ingot",
+    "buildingId": "refinery",
+    "isAlternate": true,
+    "durationSeconds": 12,
+    "inputs": [
+      {
+        "itemId": "iron-ore",
+        "amountPerCycle": 7
+      },
+      {
+        "itemId": "water",
+        "amountPerCycle": 0.004
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "iron-ingot",
+        "amountPerCycle": 13
+      }
+    ]
+  },
+  "recipe-alternate-purequartzcrystal-c": {
+    "id": "recipe-alternate-purequartzcrystal-c",
+    "displayName": "Alternate: Pure Quartz Crystal",
+    "buildingId": "refinery",
+    "isAlternate": true,
+    "durationSeconds": 8,
+    "inputs": [
+      {
+        "itemId": "raw-quartz",
+        "amountPerCycle": 9
+      },
+      {
+        "itemId": "water",
+        "amountPerCycle": 0.005
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "quartz-crystal",
+        "amountPerCycle": 7
+      }
+    ]
+  },
+  "recipe-alternate-quickwire-c": {
+    "id": "recipe-alternate-quickwire-c",
+    "displayName": "Alternate: Fused Quickwire",
+    "buildingId": "assembler",
+    "isAlternate": true,
+    "durationSeconds": 8,
+    "inputs": [
+      {
+        "itemId": "caterium-ingot",
+        "amountPerCycle": 1
+      },
+      {
+        "itemId": "copper-ingot",
+        "amountPerCycle": 5
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "quickwire",
+        "amountPerCycle": 12
+      }
+    ]
+  },
+  "recipe-alternate-radiocontrolsystem-c": {
+    "id": "recipe-alternate-radiocontrolsystem-c",
+    "displayName": "Alternate: Radio Control System",
+    "buildingId": "manufacturer",
+    "isAlternate": true,
+    "durationSeconds": 40,
+    "inputs": [
+      {
+        "itemId": "crystal-oscillator",
+        "amountPerCycle": 1
+      },
+      {
+        "itemId": "circuit-board",
+        "amountPerCycle": 10
+      },
+      {
+        "itemId": "aluminum-casing",
+        "amountPerCycle": 60
+      },
+      {
+        "itemId": "rubber",
+        "amountPerCycle": 30
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "radio-control-unit",
+        "amountPerCycle": 3
+      }
+    ]
+  },
+  "recipe-alternate-radiocontrolunit-1-c": {
+    "id": "recipe-alternate-radiocontrolunit-1-c",
+    "displayName": "Alternate: Radio Connection Unit",
+    "buildingId": "manufacturer",
+    "isAlternate": true,
+    "durationSeconds": 16,
+    "inputs": [
+      {
+        "itemId": "heat-sink",
+        "amountPerCycle": 4
+      },
+      {
+        "itemId": "high-speed-connector",
+        "amountPerCycle": 2
+      },
+      {
+        "itemId": "quartz-crystal",
+        "amountPerCycle": 12
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "radio-control-unit",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-alternate-recycledrubber-c": {
+    "id": "recipe-alternate-recycledrubber-c",
+    "displayName": "Alternate: Recycled Rubber",
+    "buildingId": "refinery",
+    "isAlternate": true,
+    "durationSeconds": 12,
+    "inputs": [
+      {
+        "itemId": "plastic",
+        "amountPerCycle": 6
+      },
+      {
+        "itemId": "fuel",
+        "amountPerCycle": 0.006
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "rubber",
+        "amountPerCycle": 12
+      }
+    ]
+  },
+  "recipe-alternate-reinforcedironplate-1-c": {
+    "id": "recipe-alternate-reinforcedironplate-1-c",
+    "displayName": "Alternate: Bolted Iron Plate",
+    "buildingId": "assembler",
+    "isAlternate": true,
+    "durationSeconds": 12,
+    "inputs": [
+      {
+        "itemId": "iron-plate",
+        "amountPerCycle": 18
+      },
+      {
+        "itemId": "screw",
+        "amountPerCycle": 50
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "reinforced-iron-plate",
+        "amountPerCycle": 3
+      }
+    ]
+  },
+  "recipe-alternate-reinforcedironplate-2-c": {
+    "id": "recipe-alternate-reinforcedironplate-2-c",
+    "displayName": "Alternate: Stitched Iron Plate",
+    "buildingId": "assembler",
+    "isAlternate": true,
+    "durationSeconds": 32,
+    "inputs": [
+      {
+        "itemId": "iron-plate",
+        "amountPerCycle": 10
+      },
+      {
+        "itemId": "wire",
+        "amountPerCycle": 20
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "reinforced-iron-plate",
+        "amountPerCycle": 3
+      }
+    ]
+  },
+  "recipe-alternate-rotor-c": {
+    "id": "recipe-alternate-rotor-c",
+    "displayName": "Alternate: Steel Rotor",
+    "buildingId": "assembler",
+    "isAlternate": true,
+    "durationSeconds": 12,
+    "inputs": [
+      {
+        "itemId": "steel-pipe",
+        "amountPerCycle": 2
+      },
+      {
+        "itemId": "wire",
+        "amountPerCycle": 6
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "rotor",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-alternate-rubberconcrete-c": {
+    "id": "recipe-alternate-rubberconcrete-c",
+    "displayName": "Alternate: Rubber Concrete",
+    "buildingId": "assembler",
+    "isAlternate": true,
+    "durationSeconds": 12,
+    "inputs": [
+      {
+        "itemId": "limestone",
+        "amountPerCycle": 10
+      },
+      {
+        "itemId": "rubber",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "concrete",
+        "amountPerCycle": 9
+      }
+    ]
+  },
+  "recipe-alternate-screw-2-c": {
+    "id": "recipe-alternate-screw-2-c",
+    "displayName": "Alternate: Steel Screw",
+    "buildingId": "constructor-bldg",
+    "isAlternate": true,
+    "durationSeconds": 12,
+    "inputs": [
+      {
+        "itemId": "steel-beam",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "screw",
+        "amountPerCycle": 52
+      }
+    ]
+  },
+  "recipe-alternate-screw-c": {
+    "id": "recipe-alternate-screw-c",
+    "displayName": "Alternate: Cast Screw",
+    "buildingId": "constructor-bldg",
+    "isAlternate": true,
+    "durationSeconds": 24,
+    "inputs": [
+      {
+        "itemId": "iron-ingot",
+        "amountPerCycle": 5
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "screw",
+        "amountPerCycle": 20
+      }
+    ]
+  },
+  "recipe-alternate-silica-c": {
+    "id": "recipe-alternate-silica-c",
+    "displayName": "Alternate: Cheap Silica",
+    "buildingId": "assembler",
+    "isAlternate": true,
+    "durationSeconds": 16,
+    "inputs": [
+      {
+        "itemId": "raw-quartz",
+        "amountPerCycle": 3
+      },
+      {
+        "itemId": "limestone",
+        "amountPerCycle": 5
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "silica",
+        "amountPerCycle": 7
+      }
+    ]
+  },
+  "recipe-alternate-sloppyalumina-c": {
+    "id": "recipe-alternate-sloppyalumina-c",
+    "displayName": "Alternate: Sloppy Alumina",
+    "buildingId": "refinery",
+    "isAlternate": true,
+    "durationSeconds": 3,
+    "inputs": [
+      {
+        "itemId": "bauxite",
+        "amountPerCycle": 10
+      },
+      {
+        "itemId": "water",
+        "amountPerCycle": 0.01
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "alumina-solution",
+        "amountPerCycle": 0.012
+      }
+    ]
+  },
+  "recipe-alternate-stator-c": {
+    "id": "recipe-alternate-stator-c",
+    "displayName": "Alternate: Quickwire Stator",
+    "buildingId": "assembler",
+    "isAlternate": true,
+    "durationSeconds": 15,
+    "inputs": [
+      {
+        "itemId": "steel-pipe",
+        "amountPerCycle": 4
+      },
+      {
+        "itemId": "quickwire",
+        "amountPerCycle": 15
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "stator",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-alternate-steamedcoppersheet-c": {
+    "id": "recipe-alternate-steamedcoppersheet-c",
+    "displayName": "Alternate: Steamed Copper Sheet",
+    "buildingId": "refinery",
+    "isAlternate": true,
+    "durationSeconds": 8,
+    "inputs": [
+      {
+        "itemId": "copper-ingot",
+        "amountPerCycle": 3
+      },
+      {
+        "itemId": "water",
+        "amountPerCycle": 0.003
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "copper-sheet",
+        "amountPerCycle": 3
+      }
+    ]
+  },
+  "recipe-alternate-steelcanister-c": {
+    "id": "recipe-alternate-steelcanister-c",
+    "displayName": "Alternate: Steel Canister",
+    "buildingId": "constructor-bldg",
+    "isAlternate": true,
+    "durationSeconds": 3,
+    "inputs": [
+      {
+        "itemId": "steel-ingot",
+        "amountPerCycle": 3
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "empty-canister",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-alternate-steelcoatedplate-c": {
+    "id": "recipe-alternate-steelcoatedplate-c",
+    "displayName": "Alternate: Steel Coated Plate",
+    "buildingId": "assembler",
+    "isAlternate": true,
+    "durationSeconds": 24,
+    "inputs": [
+      {
+        "itemId": "steel-ingot",
+        "amountPerCycle": 3
+      },
+      {
+        "itemId": "plastic",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "iron-plate",
+        "amountPerCycle": 18
+      }
+    ]
+  },
+  "recipe-alternate-steelrod-c": {
+    "id": "recipe-alternate-steelrod-c",
+    "displayName": "Alternate: Steel Rod",
+    "buildingId": "constructor-bldg",
+    "isAlternate": true,
+    "durationSeconds": 5,
+    "inputs": [
+      {
+        "itemId": "steel-ingot",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "iron-rod",
+        "amountPerCycle": 4
+      }
+    ]
+  },
+  "recipe-alternate-superstatecomputer-c": {
+    "id": "recipe-alternate-superstatecomputer-c",
+    "displayName": "Alternate: Super-State Computer",
+    "buildingId": "manufacturer",
+    "isAlternate": true,
+    "durationSeconds": 50,
+    "inputs": [
+      {
+        "itemId": "computer",
+        "amountPerCycle": 3
+      },
+      {
+        "itemId": "electromagnetic-control-rod",
+        "amountPerCycle": 2
+      },
+      {
+        "itemId": "battery",
+        "amountPerCycle": 20
+      },
+      {
+        "itemId": "wire",
+        "amountPerCycle": 45
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "supercomputer",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-alternate-turboblendfuel-c": {
+    "id": "recipe-alternate-turboblendfuel-c",
+    "displayName": "Alternate: Turbo Blend Fuel",
+    "buildingId": "blender",
+    "isAlternate": true,
+    "durationSeconds": 8,
+    "inputs": [
+      {
+        "itemId": "fuel",
+        "amountPerCycle": 0.002
+      },
+      {
+        "itemId": "heavy-oil-residue",
+        "amountPerCycle": 0.004
+      },
+      {
+        "itemId": "sulfur",
+        "amountPerCycle": 3
+      },
+      {
+        "itemId": "petroleum-coke",
+        "amountPerCycle": 3
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "turbofuel",
+        "amountPerCycle": 0.006
+      }
+    ]
+  },
+  "recipe-alternate-turbofuel-c": {
+    "id": "recipe-alternate-turbofuel-c",
+    "displayName": "Turbofuel",
+    "buildingId": "refinery",
+    "isAlternate": true,
+    "durationSeconds": 16,
+    "inputs": [
+      {
+        "itemId": "fuel",
+        "amountPerCycle": 0.006
+      },
+      {
+        "itemId": "compacted-coal",
+        "amountPerCycle": 4
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "turbofuel",
+        "amountPerCycle": 0.005
+      }
+    ]
+  },
+  "recipe-alternate-turboheavyfuel-c": {
+    "id": "recipe-alternate-turboheavyfuel-c",
+    "displayName": "Alternate: Turbo Heavy Fuel",
+    "buildingId": "refinery",
+    "isAlternate": true,
+    "durationSeconds": 8,
+    "inputs": [
+      {
+        "itemId": "heavy-oil-residue",
+        "amountPerCycle": 0.005
+      },
+      {
+        "itemId": "compacted-coal",
+        "amountPerCycle": 4
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "turbofuel",
+        "amountPerCycle": 0.004
+      }
+    ]
+  },
+  "recipe-alternate-turbomotor-1-c": {
+    "id": "recipe-alternate-turbomotor-1-c",
+    "displayName": "Alternate: Turbo Electric Motor",
+    "buildingId": "manufacturer",
+    "isAlternate": true,
+    "durationSeconds": 64,
+    "inputs": [
+      {
+        "itemId": "motor",
+        "amountPerCycle": 7
+      },
+      {
+        "itemId": "radio-control-unit",
+        "amountPerCycle": 9
+      },
+      {
+        "itemId": "electromagnetic-control-rod",
+        "amountPerCycle": 5
+      },
+      {
+        "itemId": "rotor",
+        "amountPerCycle": 7
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "turbo-motor",
+        "amountPerCycle": 3
+      }
+    ]
+  },
+  "recipe-alternate-turbopressuremotor-c": {
+    "id": "recipe-alternate-turbopressuremotor-c",
+    "displayName": "Alternate: Turbo Pressure Motor",
+    "buildingId": "manufacturer",
+    "isAlternate": true,
+    "durationSeconds": 32,
+    "inputs": [
+      {
+        "itemId": "motor",
+        "amountPerCycle": 4
+      },
+      {
+        "itemId": "pressure-conversion-cube",
+        "amountPerCycle": 1
+      },
+      {
+        "itemId": "packaged-nitrogen-gas",
+        "amountPerCycle": 0.024
+      },
+      {
+        "itemId": "stator",
+        "amountPerCycle": 8
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "turbo-motor",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-alternate-uraniumcell-1-c": {
+    "id": "recipe-alternate-uraniumcell-1-c",
+    "displayName": "Alternate: Infused Uranium Cell",
+    "buildingId": "manufacturer",
+    "isAlternate": true,
+    "durationSeconds": 12,
+    "inputs": [
+      {
+        "itemId": "uranium",
+        "amountPerCycle": 5
+      },
+      {
+        "itemId": "silica",
+        "amountPerCycle": 3
+      },
+      {
+        "itemId": "sulfur",
+        "amountPerCycle": 5
+      },
+      {
+        "itemId": "quickwire",
+        "amountPerCycle": 15
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "encased-uranium-cell",
+        "amountPerCycle": 4
+      }
+    ]
+  },
+  "recipe-alternate-wetconcrete-c": {
+    "id": "recipe-alternate-wetconcrete-c",
+    "displayName": "Alternate: Wet Concrete",
+    "buildingId": "refinery",
+    "isAlternate": true,
+    "durationSeconds": 3,
+    "inputs": [
+      {
+        "itemId": "limestone",
+        "amountPerCycle": 6
+      },
+      {
+        "itemId": "water",
+        "amountPerCycle": 0.005
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "concrete",
+        "amountPerCycle": 4
+      }
+    ]
+  },
+  "recipe-alternate-wire-1-c": {
+    "id": "recipe-alternate-wire-1-c",
+    "displayName": "Alternate: Iron Wire",
+    "buildingId": "constructor-bldg",
+    "isAlternate": true,
+    "durationSeconds": 24,
+    "inputs": [
+      {
+        "itemId": "iron-ingot",
+        "amountPerCycle": 5
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "wire",
+        "amountPerCycle": 9
+      }
+    ]
+  },
+  "recipe-alternate-wire-2-c": {
+    "id": "recipe-alternate-wire-2-c",
+    "displayName": "Alternate: Caterium Wire",
+    "buildingId": "constructor-bldg",
+    "isAlternate": true,
+    "durationSeconds": 4,
+    "inputs": [
+      {
+        "itemId": "caterium-ingot",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "wire",
+        "amountPerCycle": 8
+      }
+    ]
+  },
+  "recipe-aluminasolution-c": {
+    "id": "recipe-aluminasolution-c",
+    "displayName": "Alumina Solution",
+    "buildingId": "refinery",
+    "isAlternate": false,
+    "durationSeconds": 6,
+    "inputs": [
+      {
+        "itemId": "bauxite",
+        "amountPerCycle": 12
+      },
+      {
+        "itemId": "water",
+        "amountPerCycle": 0.018
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "alumina-solution",
+        "amountPerCycle": 0.012
+      },
+      {
+        "itemId": "silica",
+        "amountPerCycle": 5
+      }
+    ]
+  },
+  "recipe-aluminumcasing-c": {
+    "id": "recipe-aluminumcasing-c",
+    "displayName": "Aluminum Casing",
+    "buildingId": "constructor-bldg",
+    "isAlternate": false,
+    "durationSeconds": 2,
+    "inputs": [
+      {
+        "itemId": "aluminum-ingot",
+        "amountPerCycle": 3
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "aluminum-casing",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-aluminumscrap-c": {
+    "id": "recipe-aluminumscrap-c",
+    "displayName": "Aluminum Scrap",
+    "buildingId": "refinery",
+    "isAlternate": false,
+    "durationSeconds": 1,
+    "inputs": [
+      {
+        "itemId": "alumina-solution",
+        "amountPerCycle": 0.004
+      },
+      {
+        "itemId": "coal",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "aluminum-scrap",
+        "amountPerCycle": 6
+      },
+      {
+        "itemId": "water",
+        "amountPerCycle": 0.002
+      }
+    ]
+  },
+  "recipe-aluminumsheet-c": {
+    "id": "recipe-aluminumsheet-c",
+    "displayName": "Alclad Aluminum Sheet",
+    "buildingId": "assembler",
+    "isAlternate": false,
+    "durationSeconds": 6,
+    "inputs": [
+      {
+        "itemId": "aluminum-ingot",
+        "amountPerCycle": 3
+      },
+      {
+        "itemId": "copper-ingot",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "alclad-aluminum-sheet",
+        "amountPerCycle": 3
+      }
+    ]
+  },
+  "recipe-battery-c": {
+    "id": "recipe-battery-c",
+    "displayName": "Battery",
+    "buildingId": "blender",
+    "isAlternate": false,
+    "durationSeconds": 3,
+    "inputs": [
+      {
+        "itemId": "sulfuric-acid",
+        "amountPerCycle": 0.0025
+      },
+      {
+        "itemId": "alumina-solution",
+        "amountPerCycle": 0.002
+      },
+      {
+        "itemId": "aluminum-casing",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "battery",
+        "amountPerCycle": 1
+      },
+      {
+        "itemId": "water",
+        "amountPerCycle": 0.0015
+      }
+    ]
+  },
+  "recipe-beacon-c": {
+    "id": "recipe-beacon-c",
+    "displayName": "Beacon",
+    "buildingId": "manufacturer",
+    "isAlternate": false,
+    "durationSeconds": 8,
+    "inputs": [
+      {
+        "itemId": "iron-plate",
+        "amountPerCycle": 3
+      },
+      {
+        "itemId": "iron-rod",
+        "amountPerCycle": 1
+      },
+      {
+        "itemId": "wire",
+        "amountPerCycle": 15
+      },
+      {
+        "itemId": "cable",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "beacon",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-biofuel-c": {
+    "id": "recipe-biofuel-c",
+    "displayName": "Solid Biofuel",
+    "buildingId": "constructor-bldg",
+    "isAlternate": false,
+    "durationSeconds": 4,
+    "inputs": [
+      {
+        "itemId": "biomass",
+        "amountPerCycle": 8
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "solid-biofuel",
+        "amountPerCycle": 4
+      }
+    ]
+  },
+  "recipe-biomass-alienprotein-c": {
+    "id": "recipe-biomass-alienprotein-c",
+    "displayName": "Biomass (Alien Protein)",
+    "buildingId": "constructor-bldg",
+    "isAlternate": false,
+    "durationSeconds": 4,
+    "inputs": [
+      {
+        "itemId": "alien-protein",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "biomass",
+        "amountPerCycle": 100
+      }
+    ]
+  },
+  "recipe-biomass-leaves-c": {
+    "id": "recipe-biomass-leaves-c",
+    "displayName": "Biomass (Leaves)",
+    "buildingId": "constructor-bldg",
+    "isAlternate": false,
+    "durationSeconds": 5,
+    "inputs": [
+      {
+        "itemId": "leaves",
+        "amountPerCycle": 10
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "biomass",
+        "amountPerCycle": 5
+      }
+    ]
+  },
+  "recipe-biomass-mycelia-c": {
+    "id": "recipe-biomass-mycelia-c",
+    "displayName": "Biomass (Mycelia)",
+    "buildingId": "constructor-bldg",
+    "isAlternate": false,
+    "durationSeconds": 4,
+    "inputs": [
+      {
+        "itemId": "mycelia",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "biomass",
+        "amountPerCycle": 10
+      }
+    ]
+  },
+  "recipe-biomass-wood-c": {
+    "id": "recipe-biomass-wood-c",
+    "displayName": "Biomass (Wood)",
+    "buildingId": "constructor-bldg",
+    "isAlternate": false,
+    "durationSeconds": 4,
+    "inputs": [
+      {
+        "itemId": "wood",
+        "amountPerCycle": 4
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "biomass",
+        "amountPerCycle": 20
+      }
+    ]
+  },
+  "recipe-cable-c": {
+    "id": "recipe-cable-c",
+    "displayName": "Cable",
+    "buildingId": "constructor-bldg",
+    "isAlternate": false,
+    "durationSeconds": 2,
+    "inputs": [
+      {
+        "itemId": "wire",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "cable",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-cartridge-c": {
+    "id": "recipe-cartridge-c",
+    "displayName": "Rifle Ammo",
+    "buildingId": "assembler",
+    "isAlternate": false,
+    "durationSeconds": 12,
+    "inputs": [
+      {
+        "itemId": "copper-sheet",
+        "amountPerCycle": 3
+      },
+      {
+        "itemId": "smokeless-powder",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "rifle-ammo",
+        "amountPerCycle": 15
+      }
+    ]
+  },
+  "recipe-cartridgechaos-c": {
+    "id": "recipe-cartridgechaos-c",
+    "displayName": "Turbo Rifle Ammo",
+    "buildingId": "blender",
+    "isAlternate": false,
+    "durationSeconds": 12,
+    "inputs": [
+      {
+        "itemId": "rifle-ammo",
+        "amountPerCycle": 25
+      },
+      {
+        "itemId": "aluminum-casing",
+        "amountPerCycle": 3
+      },
+      {
+        "itemId": "turbofuel",
+        "amountPerCycle": 0.003
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "turbo-rifle-ammo",
+        "amountPerCycle": 50
+      }
+    ]
+  },
+  "recipe-cartridgechaos-packaged-c": {
+    "id": "recipe-cartridgechaos-packaged-c",
+    "displayName": "Turbo Rifle Ammo",
+    "buildingId": "manufacturer",
+    "isAlternate": false,
+    "durationSeconds": 12,
+    "inputs": [
+      {
+        "itemId": "rifle-ammo",
+        "amountPerCycle": 25
+      },
+      {
+        "itemId": "aluminum-casing",
+        "amountPerCycle": 3
+      },
+      {
+        "itemId": "packaged-turbofuel",
+        "amountPerCycle": 3
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "turbo-rifle-ammo",
+        "amountPerCycle": 50
+      }
+    ]
+  },
+  "recipe-cartridgesmart-c": {
+    "id": "recipe-cartridgesmart-c",
+    "displayName": "Homing Rifle Ammo",
+    "buildingId": "assembler",
+    "isAlternate": false,
+    "durationSeconds": 24,
+    "inputs": [
+      {
+        "itemId": "rifle-ammo",
+        "amountPerCycle": 20
+      },
+      {
+        "itemId": "high-speed-connector",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "homing-rifle-ammo",
+        "amountPerCycle": 10
+      }
+    ]
+  },
+  "recipe-circuitboard-c": {
+    "id": "recipe-circuitboard-c",
+    "displayName": "Circuit Board",
+    "buildingId": "assembler",
+    "isAlternate": false,
+    "durationSeconds": 8,
+    "inputs": [
+      {
+        "itemId": "copper-sheet",
+        "amountPerCycle": 2
+      },
+      {
+        "itemId": "plastic",
+        "amountPerCycle": 4
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "circuit-board",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-colorcartridge-c": {
+    "id": "recipe-colorcartridge-c",
+    "displayName": "Color Cartridge",
+    "buildingId": "constructor-bldg",
+    "isAlternate": false,
+    "durationSeconds": 6,
+    "inputs": [
+      {
+        "itemId": "flower-petals",
+        "amountPerCycle": 5
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "color-cartridge",
+        "amountPerCycle": 10
+      }
+    ]
+  },
+  "recipe-computer-c": {
+    "id": "recipe-computer-c",
+    "displayName": "Computer",
+    "buildingId": "manufacturer",
+    "isAlternate": false,
+    "durationSeconds": 24,
+    "inputs": [
+      {
+        "itemId": "circuit-board",
+        "amountPerCycle": 10
+      },
+      {
+        "itemId": "cable",
+        "amountPerCycle": 9
+      },
+      {
+        "itemId": "plastic",
+        "amountPerCycle": 18
+      },
+      {
+        "itemId": "screw",
+        "amountPerCycle": 52
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "computer",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-computersuper-c": {
+    "id": "recipe-computersuper-c",
+    "displayName": "Supercomputer",
+    "buildingId": "manufacturer",
+    "isAlternate": false,
+    "durationSeconds": 32,
+    "inputs": [
+      {
+        "itemId": "computer",
+        "amountPerCycle": 2
+      },
+      {
+        "itemId": "ai-limiter",
+        "amountPerCycle": 2
+      },
+      {
+        "itemId": "high-speed-connector",
+        "amountPerCycle": 3
+      },
+      {
+        "itemId": "plastic",
+        "amountPerCycle": 28
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "supercomputer",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-concrete-c": {
+    "id": "recipe-concrete-c",
+    "displayName": "Concrete",
+    "buildingId": "constructor-bldg",
+    "isAlternate": false,
+    "durationSeconds": 4,
+    "inputs": [
+      {
+        "itemId": "limestone",
+        "amountPerCycle": 3
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "concrete",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-coolingsystem-c": {
+    "id": "recipe-coolingsystem-c",
+    "displayName": "Cooling System",
+    "buildingId": "blender",
+    "isAlternate": false,
+    "durationSeconds": 10,
+    "inputs": [
+      {
+        "itemId": "heat-sink",
+        "amountPerCycle": 2
+      },
+      {
+        "itemId": "rubber",
+        "amountPerCycle": 2
+      },
+      {
+        "itemId": "water",
+        "amountPerCycle": 0.005
+      },
+      {
+        "itemId": "nitrogen-gas",
+        "amountPerCycle": 0.025
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "cooling-system",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-copperdust-c": {
+    "id": "recipe-copperdust-c",
+    "displayName": "Copper Powder",
+    "buildingId": "constructor-bldg",
+    "isAlternate": false,
+    "durationSeconds": 6,
+    "inputs": [
+      {
+        "itemId": "copper-ingot",
+        "amountPerCycle": 30
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "copper-powder",
+        "amountPerCycle": 5
+      }
+    ]
+  },
+  "recipe-coppersheet-c": {
+    "id": "recipe-coppersheet-c",
+    "displayName": "Copper Sheet",
+    "buildingId": "constructor-bldg",
+    "isAlternate": false,
+    "durationSeconds": 6,
+    "inputs": [
+      {
+        "itemId": "copper-ingot",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "copper-sheet",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-crystaloscillator-c": {
+    "id": "recipe-crystaloscillator-c",
+    "displayName": "Crystal Oscillator",
+    "buildingId": "manufacturer",
+    "isAlternate": false,
+    "durationSeconds": 120,
+    "inputs": [
+      {
+        "itemId": "quartz-crystal",
+        "amountPerCycle": 36
+      },
+      {
+        "itemId": "cable",
+        "amountPerCycle": 28
+      },
+      {
+        "itemId": "reinforced-iron-plate",
+        "amountPerCycle": 5
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "crystal-oscillator",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-electromagneticcontrolrod-c": {
+    "id": "recipe-electromagneticcontrolrod-c",
+    "displayName": "Electromagnetic Control Rod",
+    "buildingId": "assembler",
+    "isAlternate": false,
+    "durationSeconds": 30,
+    "inputs": [
+      {
+        "itemId": "stator",
+        "amountPerCycle": 3
+      },
+      {
+        "itemId": "ai-limiter",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "electromagnetic-control-rod",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-encasedindustrialbeam-c": {
+    "id": "recipe-encasedindustrialbeam-c",
+    "displayName": "Encased Industrial Beam",
+    "buildingId": "assembler",
+    "isAlternate": false,
+    "durationSeconds": 10,
+    "inputs": [
+      {
+        "itemId": "steel-beam",
+        "amountPerCycle": 4
+      },
+      {
+        "itemId": "concrete",
+        "amountPerCycle": 5
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "encased-industrial-beam",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-fabric-c": {
+    "id": "recipe-fabric-c",
+    "displayName": "Fabric",
+    "buildingId": "assembler",
+    "isAlternate": false,
+    "durationSeconds": 4,
+    "inputs": [
+      {
+        "itemId": "mycelia",
+        "amountPerCycle": 1
+      },
+      {
+        "itemId": "biomass",
+        "amountPerCycle": 5
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "fabric",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-filtergasmask-c": {
+    "id": "recipe-filtergasmask-c",
+    "displayName": "Gas Filter",
+    "buildingId": "manufacturer",
+    "isAlternate": false,
+    "durationSeconds": 8,
+    "inputs": [
+      {
+        "itemId": "coal",
+        "amountPerCycle": 5
+      },
+      {
+        "itemId": "rubber",
+        "amountPerCycle": 2
+      },
+      {
+        "itemId": "fabric",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "gas-filter",
+        "amountPerCycle": 0.001
+      }
+    ]
+  },
+  "recipe-filterhazmat-c": {
+    "id": "recipe-filterhazmat-c",
+    "displayName": "Iodine Infused Filter",
+    "buildingId": "manufacturer",
+    "isAlternate": false,
+    "durationSeconds": 16,
+    "inputs": [
+      {
+        "itemId": "gas-filter",
+        "amountPerCycle": 0.001
+      },
+      {
+        "itemId": "quickwire",
+        "amountPerCycle": 8
+      },
+      {
+        "itemId": "aluminum-casing",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "iodine-infused-filter",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-fluidcanister-c": {
+    "id": "recipe-fluidcanister-c",
+    "displayName": "Empty Canister",
+    "buildingId": "constructor-bldg",
+    "isAlternate": false,
+    "durationSeconds": 4,
+    "inputs": [
+      {
+        "itemId": "plastic",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "empty-canister",
+        "amountPerCycle": 4
+      }
+    ]
+  },
+  "recipe-fuel-c": {
+    "id": "recipe-fuel-c",
+    "displayName": "Packaged Fuel",
+    "buildingId": "packager",
+    "isAlternate": false,
+    "durationSeconds": 3,
+    "inputs": [
+      {
+        "itemId": "fuel",
+        "amountPerCycle": 0.002
+      },
+      {
+        "itemId": "empty-canister",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "packaged-fuel",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-fusedmodularframe-c": {
+    "id": "recipe-fusedmodularframe-c",
+    "displayName": "Fused Modular Frame",
+    "buildingId": "blender",
+    "isAlternate": false,
+    "durationSeconds": 40,
+    "inputs": [
+      {
+        "itemId": "heavy-modular-frame",
+        "amountPerCycle": 1
+      },
+      {
+        "itemId": "aluminum-casing",
+        "amountPerCycle": 50
+      },
+      {
+        "itemId": "nitrogen-gas",
+        "amountPerCycle": 0.025
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "fused-modular-frame",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-gastank-c": {
+    "id": "recipe-gastank-c",
+    "displayName": "Empty Fluid Tank",
+    "buildingId": "constructor-bldg",
+    "isAlternate": false,
+    "durationSeconds": 1,
+    "inputs": [
+      {
+        "itemId": "aluminum-ingot",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "empty-fluid-tank",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-gunpowder-c": {
+    "id": "recipe-gunpowder-c",
+    "displayName": "Black Powder",
+    "buildingId": "assembler",
+    "isAlternate": false,
+    "durationSeconds": 4,
+    "inputs": [
+      {
+        "itemId": "coal",
+        "amountPerCycle": 1
+      },
+      {
+        "itemId": "sulfur",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "black-powder",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-gunpowdermk2-c": {
+    "id": "recipe-gunpowdermk2-c",
+    "displayName": "Smokeless Powder",
+    "buildingId": "refinery",
+    "isAlternate": false,
+    "durationSeconds": 6,
+    "inputs": [
+      {
+        "itemId": "black-powder",
+        "amountPerCycle": 2
+      },
+      {
+        "itemId": "heavy-oil-residue",
+        "amountPerCycle": 0.001
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "smokeless-powder",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-heatsink-c": {
+    "id": "recipe-heatsink-c",
+    "displayName": "Heat Sink",
+    "buildingId": "assembler",
+    "isAlternate": false,
+    "durationSeconds": 8,
+    "inputs": [
+      {
+        "itemId": "alclad-aluminum-sheet",
+        "amountPerCycle": 5
+      },
+      {
+        "itemId": "copper-sheet",
+        "amountPerCycle": 3
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "heat-sink",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-highspeedconnector-c": {
+    "id": "recipe-highspeedconnector-c",
+    "displayName": "High-Speed Connector",
+    "buildingId": "manufacturer",
+    "isAlternate": false,
+    "durationSeconds": 16,
+    "inputs": [
+      {
+        "itemId": "quickwire",
+        "amountPerCycle": 56
+      },
+      {
+        "itemId": "cable",
+        "amountPerCycle": 10
+      },
+      {
+        "itemId": "circuit-board",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "high-speed-connector",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-ingotaluminum-c": {
+    "id": "recipe-ingotaluminum-c",
+    "displayName": "Aluminum Ingot",
+    "buildingId": "foundry",
+    "isAlternate": false,
+    "durationSeconds": 4,
+    "inputs": [
+      {
+        "itemId": "aluminum-scrap",
+        "amountPerCycle": 6
+      },
+      {
+        "itemId": "silica",
+        "amountPerCycle": 5
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "aluminum-ingot",
+        "amountPerCycle": 4
+      }
+    ]
+  },
+  "recipe-ingotcaterium-c": {
+    "id": "recipe-ingotcaterium-c",
+    "displayName": "Caterium Ingot",
+    "buildingId": "smelter",
+    "isAlternate": false,
+    "durationSeconds": 4,
+    "inputs": [
+      {
+        "itemId": "caterium-ore",
+        "amountPerCycle": 3
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "caterium-ingot",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-ingotcopper-c": {
+    "id": "recipe-ingotcopper-c",
+    "displayName": "Copper Ingot",
+    "buildingId": "smelter",
+    "isAlternate": false,
+    "durationSeconds": 2,
+    "inputs": [
+      {
+        "itemId": "copper-ore",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "copper-ingot",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-ingotiron-c": {
+    "id": "recipe-ingotiron-c",
+    "displayName": "Iron Ingot",
+    "buildingId": "smelter",
+    "isAlternate": false,
+    "durationSeconds": 2,
+    "inputs": [
+      {
+        "itemId": "iron-ore",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "iron-ingot",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-ingotsteel-c": {
+    "id": "recipe-ingotsteel-c",
+    "displayName": "Steel Ingot",
+    "buildingId": "foundry",
+    "isAlternate": false,
+    "durationSeconds": 4,
+    "inputs": [
+      {
+        "itemId": "iron-ore",
+        "amountPerCycle": 3
+      },
+      {
+        "itemId": "coal",
+        "amountPerCycle": 3
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "steel-ingot",
+        "amountPerCycle": 3
+      }
+    ]
+  },
+  "recipe-ironplate-c": {
+    "id": "recipe-ironplate-c",
+    "displayName": "Iron Plate",
+    "buildingId": "constructor-bldg",
+    "isAlternate": false,
+    "durationSeconds": 6,
+    "inputs": [
+      {
+        "itemId": "iron-ingot",
+        "amountPerCycle": 3
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "iron-plate",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-ironplatereinforced-c": {
+    "id": "recipe-ironplatereinforced-c",
+    "displayName": "Reinforced Iron Plate",
+    "buildingId": "assembler",
+    "isAlternate": false,
+    "durationSeconds": 12,
+    "inputs": [
+      {
+        "itemId": "iron-plate",
+        "amountPerCycle": 6
+      },
+      {
+        "itemId": "screw",
+        "amountPerCycle": 12
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "reinforced-iron-plate",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-ironrod-c": {
+    "id": "recipe-ironrod-c",
+    "displayName": "Iron Rod",
+    "buildingId": "constructor-bldg",
+    "isAlternate": false,
+    "durationSeconds": 4,
+    "inputs": [
+      {
+        "itemId": "iron-ingot",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "iron-rod",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-liquidbiofuel-c": {
+    "id": "recipe-liquidbiofuel-c",
+    "displayName": "Liquid Biofuel",
+    "buildingId": "refinery",
+    "isAlternate": false,
+    "durationSeconds": 4,
+    "inputs": [
+      {
+        "itemId": "solid-biofuel",
+        "amountPerCycle": 6
+      },
+      {
+        "itemId": "water",
+        "amountPerCycle": 0.003
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "liquid-biofuel",
+        "amountPerCycle": 0.004
+      }
+    ]
+  },
+  "recipe-liquidfuel-c": {
+    "id": "recipe-liquidfuel-c",
+    "displayName": "Fuel",
+    "buildingId": "refinery",
+    "isAlternate": false,
+    "durationSeconds": 6,
+    "inputs": [
+      {
+        "itemId": "crude-oil",
+        "amountPerCycle": 0.006
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "fuel",
+        "amountPerCycle": 0.004
+      },
+      {
+        "itemId": "polymer-resin",
+        "amountPerCycle": 3
+      }
+    ]
+  },
+  "recipe-modularframe-c": {
+    "id": "recipe-modularframe-c",
+    "displayName": "Modular Frame",
+    "buildingId": "assembler",
+    "isAlternate": false,
+    "durationSeconds": 60,
+    "inputs": [
+      {
+        "itemId": "reinforced-iron-plate",
+        "amountPerCycle": 3
+      },
+      {
+        "itemId": "iron-rod",
+        "amountPerCycle": 12
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "modular-frame",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-modularframeheavy-c": {
+    "id": "recipe-modularframeheavy-c",
+    "displayName": "Heavy Modular Frame",
+    "buildingId": "manufacturer",
+    "isAlternate": false,
+    "durationSeconds": 30,
+    "inputs": [
+      {
+        "itemId": "modular-frame",
+        "amountPerCycle": 5
+      },
+      {
+        "itemId": "steel-pipe",
+        "amountPerCycle": 15
+      },
+      {
+        "itemId": "encased-industrial-beam",
+        "amountPerCycle": 5
+      },
+      {
+        "itemId": "screw",
+        "amountPerCycle": 100
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "heavy-modular-frame",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-motor-c": {
+    "id": "recipe-motor-c",
+    "displayName": "Motor",
+    "buildingId": "assembler",
+    "isAlternate": false,
+    "durationSeconds": 12,
+    "inputs": [
+      {
+        "itemId": "rotor",
+        "amountPerCycle": 2
+      },
+      {
+        "itemId": "stator",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "motor",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-motorturbo-c": {
+    "id": "recipe-motorturbo-c",
+    "displayName": "Turbo Motor",
+    "buildingId": "manufacturer",
+    "isAlternate": false,
+    "durationSeconds": 32,
+    "inputs": [
+      {
+        "itemId": "cooling-system",
+        "amountPerCycle": 4
+      },
+      {
+        "itemId": "radio-control-unit",
+        "amountPerCycle": 2
+      },
+      {
+        "itemId": "motor",
+        "amountPerCycle": 4
+      },
+      {
+        "itemId": "rubber",
+        "amountPerCycle": 24
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "turbo-motor",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-nitricacid-c": {
+    "id": "recipe-nitricacid-c",
+    "displayName": "Nitric Acid",
+    "buildingId": "blender",
+    "isAlternate": false,
+    "durationSeconds": 6,
+    "inputs": [
+      {
+        "itemId": "nitrogen-gas",
+        "amountPerCycle": 0.012
+      },
+      {
+        "itemId": "water",
+        "amountPerCycle": 0.003
+      },
+      {
+        "itemId": "iron-plate",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "nitric-acid",
+        "amountPerCycle": 0.003
+      }
+    ]
+  },
+  "recipe-nobelisk-c": {
+    "id": "recipe-nobelisk-c",
+    "displayName": "Nobelisk",
+    "buildingId": "assembler",
+    "isAlternate": false,
+    "durationSeconds": 6,
+    "inputs": [
+      {
+        "itemId": "black-powder",
+        "amountPerCycle": 2
+      },
+      {
+        "itemId": "steel-pipe",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "nobelisk",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-nobeliskcluster-c": {
+    "id": "recipe-nobeliskcluster-c",
+    "displayName": "Cluster Nobelisk",
+    "buildingId": "assembler",
+    "isAlternate": false,
+    "durationSeconds": 24,
+    "inputs": [
+      {
+        "itemId": "nobelisk",
+        "amountPerCycle": 3
+      },
+      {
+        "itemId": "smokeless-powder",
+        "amountPerCycle": 4
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "cluster-nobelisk",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-nobeliskgas-c": {
+    "id": "recipe-nobeliskgas-c",
+    "displayName": "Gas Nobelisk",
+    "buildingId": "assembler",
+    "isAlternate": false,
+    "durationSeconds": 12,
+    "inputs": [
+      {
+        "itemId": "nobelisk",
+        "amountPerCycle": 1
+      },
+      {
+        "itemId": "biomass",
+        "amountPerCycle": 10
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "gas-nobelisk",
+        "amountPerCycle": 0.001
+      }
+    ]
+  },
+  "recipe-nobelisknuke-c": {
+    "id": "recipe-nobelisknuke-c",
+    "displayName": "Nuke Nobelisk",
+    "buildingId": "manufacturer",
+    "isAlternate": false,
+    "durationSeconds": 120,
+    "inputs": [
+      {
+        "itemId": "nobelisk",
+        "amountPerCycle": 5
+      },
+      {
+        "itemId": "encased-uranium-cell",
+        "amountPerCycle": 20
+      },
+      {
+        "itemId": "smokeless-powder",
+        "amountPerCycle": 10
+      },
+      {
+        "itemId": "ai-limiter",
+        "amountPerCycle": 6
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "nuke-nobelisk",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-nobeliskshockwave-c": {
+    "id": "recipe-nobeliskshockwave-c",
+    "displayName": "Pulse Nobelisk",
+    "buildingId": "assembler",
+    "isAlternate": false,
+    "durationSeconds": 60,
+    "inputs": [
+      {
+        "itemId": "nobelisk",
+        "amountPerCycle": 5
+      },
+      {
+        "itemId": "crystal-oscillator",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "pulse-nobelisk",
+        "amountPerCycle": 5
+      }
+    ]
+  },
+  "recipe-nonfissileuranium-c": {
+    "id": "recipe-nonfissileuranium-c",
+    "displayName": "Non-fissile Uranium",
+    "buildingId": "blender",
+    "isAlternate": false,
+    "durationSeconds": 24,
+    "inputs": [
+      {
+        "itemId": "uranium-waste",
+        "amountPerCycle": 15
+      },
+      {
+        "itemId": "silica",
+        "amountPerCycle": 10
+      },
+      {
+        "itemId": "nitric-acid",
+        "amountPerCycle": 0.006
+      },
+      {
+        "itemId": "sulfuric-acid",
+        "amountPerCycle": 0.006
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "non-fissile-uranium",
+        "amountPerCycle": 20
+      },
+      {
+        "itemId": "water",
+        "amountPerCycle": 0.006
+      }
+    ]
+  },
+  "recipe-nuclearfuelrod-c": {
+    "id": "recipe-nuclearfuelrod-c",
+    "displayName": "Uranium Fuel Rod",
+    "buildingId": "manufacturer",
+    "isAlternate": false,
+    "durationSeconds": 150,
+    "inputs": [
+      {
+        "itemId": "encased-uranium-cell",
+        "amountPerCycle": 50
+      },
+      {
+        "itemId": "encased-industrial-beam",
+        "amountPerCycle": 3
+      },
+      {
+        "itemId": "electromagnetic-control-rod",
+        "amountPerCycle": 5
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "uranium-fuel-rod",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-packagedalumina-c": {
+    "id": "recipe-packagedalumina-c",
+    "displayName": "Packaged Alumina Solution",
+    "buildingId": "packager",
+    "isAlternate": false,
+    "durationSeconds": 1,
+    "inputs": [
+      {
+        "itemId": "alumina-solution",
+        "amountPerCycle": 0.002
+      },
+      {
+        "itemId": "empty-canister",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "packaged-alumina-solution",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-packagedbiofuel-c": {
+    "id": "recipe-packagedbiofuel-c",
+    "displayName": "Packaged Liquid Biofuel",
+    "buildingId": "packager",
+    "isAlternate": false,
+    "durationSeconds": 3,
+    "inputs": [
+      {
+        "itemId": "liquid-biofuel",
+        "amountPerCycle": 0.002
+      },
+      {
+        "itemId": "empty-canister",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "packaged-liquid-biofuel",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-packagedcrudeoil-c": {
+    "id": "recipe-packagedcrudeoil-c",
+    "displayName": "Packaged Oil",
+    "buildingId": "packager",
+    "isAlternate": false,
+    "durationSeconds": 4,
+    "inputs": [
+      {
+        "itemId": "crude-oil",
+        "amountPerCycle": 0.002
+      },
+      {
+        "itemId": "empty-canister",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "packaged-oil",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-packagednitricacid-c": {
+    "id": "recipe-packagednitricacid-c",
+    "displayName": "Packaged Nitric Acid",
+    "buildingId": "packager",
+    "isAlternate": false,
+    "durationSeconds": 2,
+    "inputs": [
+      {
+        "itemId": "nitric-acid",
+        "amountPerCycle": 0.001
+      },
+      {
+        "itemId": "empty-fluid-tank",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "packaged-nitric-acid",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-packagednitrogen-c": {
+    "id": "recipe-packagednitrogen-c",
+    "displayName": "Packaged Nitrogen Gas",
+    "buildingId": "packager",
+    "isAlternate": false,
+    "durationSeconds": 1,
+    "inputs": [
+      {
+        "itemId": "nitrogen-gas",
+        "amountPerCycle": 0.004
+      },
+      {
+        "itemId": "empty-fluid-tank",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "packaged-nitrogen-gas",
+        "amountPerCycle": 0.001
+      }
+    ]
+  },
+  "recipe-packagedoilresidue-c": {
+    "id": "recipe-packagedoilresidue-c",
+    "displayName": "Packaged Heavy Oil Residue",
+    "buildingId": "packager",
+    "isAlternate": false,
+    "durationSeconds": 4,
+    "inputs": [
+      {
+        "itemId": "heavy-oil-residue",
+        "amountPerCycle": 0.002
+      },
+      {
+        "itemId": "empty-canister",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "packaged-heavy-oil-residue",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-packagedsulfuricacid-c": {
+    "id": "recipe-packagedsulfuricacid-c",
+    "displayName": "Packaged Sulfuric Acid",
+    "buildingId": "packager",
+    "isAlternate": false,
+    "durationSeconds": 3,
+    "inputs": [
+      {
+        "itemId": "sulfuric-acid",
+        "amountPerCycle": 0.002
+      },
+      {
+        "itemId": "empty-canister",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "packaged-sulfuric-acid",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-packagedturbofuel-c": {
+    "id": "recipe-packagedturbofuel-c",
+    "displayName": "Packaged Turbofuel",
+    "buildingId": "packager",
+    "isAlternate": false,
+    "durationSeconds": 6,
+    "inputs": [
+      {
+        "itemId": "turbofuel",
+        "amountPerCycle": 0.002
+      },
+      {
+        "itemId": "empty-canister",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "packaged-turbofuel",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-packagedwater-c": {
+    "id": "recipe-packagedwater-c",
+    "displayName": "Packaged Water",
+    "buildingId": "packager",
+    "isAlternate": false,
+    "durationSeconds": 2,
+    "inputs": [
+      {
+        "itemId": "water",
+        "amountPerCycle": 0.002
+      },
+      {
+        "itemId": "empty-canister",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "packaged-water",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-petroleumcoke-c": {
+    "id": "recipe-petroleumcoke-c",
+    "displayName": "Petroleum Coke",
+    "buildingId": "refinery",
+    "isAlternate": false,
+    "durationSeconds": 6,
+    "inputs": [
+      {
+        "itemId": "heavy-oil-residue",
+        "amountPerCycle": 0.004
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "petroleum-coke",
+        "amountPerCycle": 12
+      }
+    ]
+  },
+  "recipe-plastic-c": {
+    "id": "recipe-plastic-c",
+    "displayName": "Plastic",
+    "buildingId": "refinery",
+    "isAlternate": false,
+    "durationSeconds": 6,
+    "inputs": [
+      {
+        "itemId": "crude-oil",
+        "amountPerCycle": 0.003
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "plastic",
+        "amountPerCycle": 2
+      },
+      {
+        "itemId": "heavy-oil-residue",
+        "amountPerCycle": 0.001
+      }
+    ]
+  },
+  "recipe-plutonium-c": {
+    "id": "recipe-plutonium-c",
+    "displayName": "Plutonium Pellet",
+    "buildingId": "particle-accelerator",
+    "isAlternate": false,
+    "durationSeconds": 60,
+    "inputs": [
+      {
+        "itemId": "non-fissile-uranium",
+        "amountPerCycle": 100
+      },
+      {
+        "itemId": "uranium-waste",
+        "amountPerCycle": 25
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "plutonium-pellet",
+        "amountPerCycle": 30
+      }
+    ]
+  },
+  "recipe-plutoniumcell-c": {
+    "id": "recipe-plutoniumcell-c",
+    "displayName": "Encased Plutonium Cell",
+    "buildingId": "assembler",
+    "isAlternate": false,
+    "durationSeconds": 12,
+    "inputs": [
+      {
+        "itemId": "plutonium-pellet",
+        "amountPerCycle": 2
+      },
+      {
+        "itemId": "concrete",
+        "amountPerCycle": 4
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "encased-plutonium-cell",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-plutoniumfuelrod-c": {
+    "id": "recipe-plutoniumfuelrod-c",
+    "displayName": "Plutonium Fuel Rod",
+    "buildingId": "manufacturer",
+    "isAlternate": false,
+    "durationSeconds": 240,
+    "inputs": [
+      {
+        "itemId": "encased-plutonium-cell",
+        "amountPerCycle": 30
+      },
+      {
+        "itemId": "steel-beam",
+        "amountPerCycle": 18
+      },
+      {
+        "itemId": "electromagnetic-control-rod",
+        "amountPerCycle": 6
+      },
+      {
+        "itemId": "heat-sink",
+        "amountPerCycle": 10
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "plutonium-fuel-rod",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-powercrystalshard-1-c": {
+    "id": "recipe-powercrystalshard-1-c",
+    "displayName": "Power Shard (1)",
+    "buildingId": "constructor-bldg",
+    "isAlternate": false,
+    "durationSeconds": 8,
+    "inputs": [
+      {
+        "itemId": "blue-power-slug",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "power-shard",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-powercrystalshard-2-c": {
+    "id": "recipe-powercrystalshard-2-c",
+    "displayName": "Power Shard (2)",
+    "buildingId": "constructor-bldg",
+    "isAlternate": false,
+    "durationSeconds": 12,
+    "inputs": [
+      {
+        "itemId": "yellow-power-slug",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "power-shard",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-powercrystalshard-3-c": {
+    "id": "recipe-powercrystalshard-3-c",
+    "displayName": "Power Shard (5)",
+    "buildingId": "constructor-bldg",
+    "isAlternate": false,
+    "durationSeconds": 24,
+    "inputs": [
+      {
+        "itemId": "purple-power-slug",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "power-shard",
+        "amountPerCycle": 5
+      }
+    ]
+  },
+  "recipe-pressureconversioncube-c": {
+    "id": "recipe-pressureconversioncube-c",
+    "displayName": "Pressure Conversion Cube",
+    "buildingId": "assembler",
+    "isAlternate": false,
+    "durationSeconds": 60,
+    "inputs": [
+      {
+        "itemId": "fused-modular-frame",
+        "amountPerCycle": 1
+      },
+      {
+        "itemId": "radio-control-unit",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "pressure-conversion-cube",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-protein-crab-c": {
+    "id": "recipe-protein-crab-c",
+    "displayName": "Hatcher Protein",
+    "buildingId": "constructor-bldg",
+    "isAlternate": false,
+    "durationSeconds": 3,
+    "inputs": [
+      {
+        "itemId": "hatcher-remains",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "alien-protein",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-protein-hog-c": {
+    "id": "recipe-protein-hog-c",
+    "displayName": "Hog Protein",
+    "buildingId": "constructor-bldg",
+    "isAlternate": false,
+    "durationSeconds": 3,
+    "inputs": [
+      {
+        "itemId": "hog-remains",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "alien-protein",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-protein-spitter-c": {
+    "id": "recipe-protein-spitter-c",
+    "displayName": "Spitter Protein",
+    "buildingId": "constructor-bldg",
+    "isAlternate": false,
+    "durationSeconds": 3,
+    "inputs": [
+      {
+        "itemId": "plasma-spitter-remains",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "alien-protein",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-protein-stinger-c": {
+    "id": "recipe-protein-stinger-c",
+    "displayName": "Stinger Protein",
+    "buildingId": "constructor-bldg",
+    "isAlternate": false,
+    "durationSeconds": 3,
+    "inputs": [
+      {
+        "itemId": "stinger-remains",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "alien-protein",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-purealuminumingot-c": {
+    "id": "recipe-purealuminumingot-c",
+    "displayName": "Alternate: Pure Aluminum Ingot",
+    "buildingId": "smelter",
+    "isAlternate": true,
+    "durationSeconds": 2,
+    "inputs": [
+      {
+        "itemId": "aluminum-scrap",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "aluminum-ingot",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-quartzcrystal-c": {
+    "id": "recipe-quartzcrystal-c",
+    "displayName": "Quartz Crystal",
+    "buildingId": "constructor-bldg",
+    "isAlternate": false,
+    "durationSeconds": 8,
+    "inputs": [
+      {
+        "itemId": "raw-quartz",
+        "amountPerCycle": 5
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "quartz-crystal",
+        "amountPerCycle": 3
+      }
+    ]
+  },
+  "recipe-quickwire-c": {
+    "id": "recipe-quickwire-c",
+    "displayName": "Quickwire",
+    "buildingId": "constructor-bldg",
+    "isAlternate": false,
+    "durationSeconds": 5,
+    "inputs": [
+      {
+        "itemId": "caterium-ingot",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "quickwire",
+        "amountPerCycle": 5
+      }
+    ]
+  },
+  "recipe-radiocontrolunit-c": {
+    "id": "recipe-radiocontrolunit-c",
+    "displayName": "Radio Control Unit",
+    "buildingId": "manufacturer",
+    "isAlternate": false,
+    "durationSeconds": 48,
+    "inputs": [
+      {
+        "itemId": "aluminum-casing",
+        "amountPerCycle": 32
+      },
+      {
+        "itemId": "crystal-oscillator",
+        "amountPerCycle": 1
+      },
+      {
+        "itemId": "computer",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "radio-control-unit",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-rebar-explosive-c": {
+    "id": "recipe-rebar-explosive-c",
+    "displayName": "Explosive Rebar",
+    "buildingId": "manufacturer",
+    "isAlternate": false,
+    "durationSeconds": 12,
+    "inputs": [
+      {
+        "itemId": "iron-rebar",
+        "amountPerCycle": 2
+      },
+      {
+        "itemId": "smokeless-powder",
+        "amountPerCycle": 2
+      },
+      {
+        "itemId": "steel-pipe",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "explosive-rebar",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-rebar-spreadshot-c": {
+    "id": "recipe-rebar-spreadshot-c",
+    "displayName": "Shatter Rebar",
+    "buildingId": "assembler",
+    "isAlternate": false,
+    "durationSeconds": 12,
+    "inputs": [
+      {
+        "itemId": "iron-rebar",
+        "amountPerCycle": 2
+      },
+      {
+        "itemId": "quartz-crystal",
+        "amountPerCycle": 3
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "shatter-rebar",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-rebar-stunshot-c": {
+    "id": "recipe-rebar-stunshot-c",
+    "displayName": "Stun Rebar",
+    "buildingId": "assembler",
+    "isAlternate": false,
+    "durationSeconds": 6,
+    "inputs": [
+      {
+        "itemId": "iron-rebar",
+        "amountPerCycle": 1
+      },
+      {
+        "itemId": "quickwire",
+        "amountPerCycle": 5
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "stun-rebar",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-residualfuel-c": {
+    "id": "recipe-residualfuel-c",
+    "displayName": "Residual Fuel",
+    "buildingId": "refinery",
+    "isAlternate": false,
+    "durationSeconds": 6,
+    "inputs": [
+      {
+        "itemId": "heavy-oil-residue",
+        "amountPerCycle": 0.006
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "fuel",
+        "amountPerCycle": 0.004
+      }
+    ]
+  },
+  "recipe-residualplastic-c": {
+    "id": "recipe-residualplastic-c",
+    "displayName": "Residual Plastic",
+    "buildingId": "refinery",
+    "isAlternate": false,
+    "durationSeconds": 6,
+    "inputs": [
+      {
+        "itemId": "polymer-resin",
+        "amountPerCycle": 6
+      },
+      {
+        "itemId": "water",
+        "amountPerCycle": 0.002
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "plastic",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-residualrubber-c": {
+    "id": "recipe-residualrubber-c",
+    "displayName": "Residual Rubber",
+    "buildingId": "refinery",
+    "isAlternate": false,
+    "durationSeconds": 6,
+    "inputs": [
+      {
+        "itemId": "polymer-resin",
+        "amountPerCycle": 4
+      },
+      {
+        "itemId": "water",
+        "amountPerCycle": 0.004
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "rubber",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-rotor-c": {
+    "id": "recipe-rotor-c",
+    "displayName": "Rotor",
+    "buildingId": "assembler",
+    "isAlternate": false,
+    "durationSeconds": 15,
+    "inputs": [
+      {
+        "itemId": "iron-rod",
+        "amountPerCycle": 5
+      },
+      {
+        "itemId": "screw",
+        "amountPerCycle": 25
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "rotor",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-rubber-c": {
+    "id": "recipe-rubber-c",
+    "displayName": "Rubber",
+    "buildingId": "refinery",
+    "isAlternate": false,
+    "durationSeconds": 6,
+    "inputs": [
+      {
+        "itemId": "crude-oil",
+        "amountPerCycle": 0.003
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "rubber",
+        "amountPerCycle": 2
+      },
+      {
+        "itemId": "heavy-oil-residue",
+        "amountPerCycle": 0.002
+      }
+    ]
+  },
+  "recipe-screw-c": {
+    "id": "recipe-screw-c",
+    "displayName": "Screw",
+    "buildingId": "constructor-bldg",
+    "isAlternate": false,
+    "durationSeconds": 6,
+    "inputs": [
+      {
+        "itemId": "iron-rod",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "screw",
+        "amountPerCycle": 4
+      }
+    ]
+  },
+  "recipe-silica-c": {
+    "id": "recipe-silica-c",
+    "displayName": "Silica",
+    "buildingId": "constructor-bldg",
+    "isAlternate": false,
+    "durationSeconds": 8,
+    "inputs": [
+      {
+        "itemId": "raw-quartz",
+        "amountPerCycle": 3
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "silica",
+        "amountPerCycle": 5
+      }
+    ]
+  },
+  "recipe-spaceelevatorpart-1-c": {
+    "id": "recipe-spaceelevatorpart-1-c",
+    "displayName": "Smart Plating",
+    "buildingId": "assembler",
+    "isAlternate": false,
+    "durationSeconds": 30,
+    "inputs": [
+      {
+        "itemId": "reinforced-iron-plate",
+        "amountPerCycle": 1
+      },
+      {
+        "itemId": "rotor",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "smart-plating",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-spaceelevatorpart-2-c": {
+    "id": "recipe-spaceelevatorpart-2-c",
+    "displayName": "Versatile Framework",
+    "buildingId": "assembler",
+    "isAlternate": false,
+    "durationSeconds": 24,
+    "inputs": [
+      {
+        "itemId": "modular-frame",
+        "amountPerCycle": 1
+      },
+      {
+        "itemId": "steel-beam",
+        "amountPerCycle": 12
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "versatile-framework",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-spaceelevatorpart-3-c": {
+    "id": "recipe-spaceelevatorpart-3-c",
+    "displayName": "Automated Wiring",
+    "buildingId": "assembler",
+    "isAlternate": false,
+    "durationSeconds": 24,
+    "inputs": [
+      {
+        "itemId": "stator",
+        "amountPerCycle": 1
+      },
+      {
+        "itemId": "cable",
+        "amountPerCycle": 20
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "automated-wiring",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-spaceelevatorpart-4-c": {
+    "id": "recipe-spaceelevatorpart-4-c",
+    "displayName": "Modular Engine",
+    "buildingId": "manufacturer",
+    "isAlternate": false,
+    "durationSeconds": 60,
+    "inputs": [
+      {
+        "itemId": "motor",
+        "amountPerCycle": 2
+      },
+      {
+        "itemId": "rubber",
+        "amountPerCycle": 15
+      },
+      {
+        "itemId": "smart-plating",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "modular-engine",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-spaceelevatorpart-5-c": {
+    "id": "recipe-spaceelevatorpart-5-c",
+    "displayName": "Adaptive Control Unit",
+    "buildingId": "manufacturer",
+    "isAlternate": false,
+    "durationSeconds": 120,
+    "inputs": [
+      {
+        "itemId": "automated-wiring",
+        "amountPerCycle": 15
+      },
+      {
+        "itemId": "circuit-board",
+        "amountPerCycle": 10
+      },
+      {
+        "itemId": "heavy-modular-frame",
+        "amountPerCycle": 2
+      },
+      {
+        "itemId": "computer",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "adaptive-control-unit",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-spaceelevatorpart-6-c": {
+    "id": "recipe-spaceelevatorpart-6-c",
+    "displayName": "Magnetic Field Generator",
+    "buildingId": "manufacturer",
+    "isAlternate": false,
+    "durationSeconds": 120,
+    "inputs": [
+      {
+        "itemId": "versatile-framework",
+        "amountPerCycle": 5
+      },
+      {
+        "itemId": "electromagnetic-control-rod",
+        "amountPerCycle": 2
+      },
+      {
+        "itemId": "battery",
+        "amountPerCycle": 10
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "magnetic-field-generator",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-spaceelevatorpart-7-c": {
+    "id": "recipe-spaceelevatorpart-7-c",
+    "displayName": "Assembly Director System",
+    "buildingId": "assembler",
+    "isAlternate": false,
+    "durationSeconds": 80,
+    "inputs": [
+      {
+        "itemId": "adaptive-control-unit",
+        "amountPerCycle": 2
+      },
+      {
+        "itemId": "supercomputer",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "assembly-director-system",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-spaceelevatorpart-8-c": {
+    "id": "recipe-spaceelevatorpart-8-c",
+    "displayName": "Thermal Propulsion Rocket",
+    "buildingId": "manufacturer",
+    "isAlternate": false,
+    "durationSeconds": 120,
+    "inputs": [
+      {
+        "itemId": "modular-engine",
+        "amountPerCycle": 5
+      },
+      {
+        "itemId": "turbo-motor",
+        "amountPerCycle": 2
+      },
+      {
+        "itemId": "cooling-system",
+        "amountPerCycle": 6
+      },
+      {
+        "itemId": "fused-modular-frame",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "thermal-propulsion-rocket",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-spaceelevatorpart-9-c": {
+    "id": "recipe-spaceelevatorpart-9-c",
+    "displayName": "Nuclear Pasta",
+    "buildingId": "particle-accelerator",
+    "isAlternate": false,
+    "durationSeconds": 120,
+    "inputs": [
+      {
+        "itemId": "copper-powder",
+        "amountPerCycle": 200
+      },
+      {
+        "itemId": "pressure-conversion-cube",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "nuclear-pasta",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-spikedrebar-c": {
+    "id": "recipe-spikedrebar-c",
+    "displayName": "Iron Rebar",
+    "buildingId": "constructor-bldg",
+    "isAlternate": false,
+    "durationSeconds": 4,
+    "inputs": [
+      {
+        "itemId": "iron-rod",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "iron-rebar",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-stator-c": {
+    "id": "recipe-stator-c",
+    "displayName": "Stator",
+    "buildingId": "assembler",
+    "isAlternate": false,
+    "durationSeconds": 12,
+    "inputs": [
+      {
+        "itemId": "steel-pipe",
+        "amountPerCycle": 3
+      },
+      {
+        "itemId": "wire",
+        "amountPerCycle": 8
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "stator",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-steelbeam-c": {
+    "id": "recipe-steelbeam-c",
+    "displayName": "Steel Beam",
+    "buildingId": "constructor-bldg",
+    "isAlternate": false,
+    "durationSeconds": 4,
+    "inputs": [
+      {
+        "itemId": "steel-ingot",
+        "amountPerCycle": 4
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "steel-beam",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-steelpipe-c": {
+    "id": "recipe-steelpipe-c",
+    "displayName": "Steel Pipe",
+    "buildingId": "constructor-bldg",
+    "isAlternate": false,
+    "durationSeconds": 6,
+    "inputs": [
+      {
+        "itemId": "steel-ingot",
+        "amountPerCycle": 3
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "steel-pipe",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-sulfuricacid-c": {
+    "id": "recipe-sulfuricacid-c",
+    "displayName": "Sulfuric Acid",
+    "buildingId": "refinery",
+    "isAlternate": false,
+    "durationSeconds": 6,
+    "inputs": [
+      {
+        "itemId": "sulfur",
+        "amountPerCycle": 5
+      },
+      {
+        "itemId": "water",
+        "amountPerCycle": 0.005
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "sulfuric-acid",
+        "amountPerCycle": 0.005
+      }
+    ]
+  },
+  "recipe-unpackagealumina-c": {
+    "id": "recipe-unpackagealumina-c",
+    "displayName": "Unpackage Alumina Solution",
+    "buildingId": "packager",
+    "isAlternate": false,
+    "durationSeconds": 1,
+    "inputs": [
+      {
+        "itemId": "packaged-alumina-solution",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "alumina-solution",
+        "amountPerCycle": 0.002
+      },
+      {
+        "itemId": "empty-canister",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-unpackagebiofuel-c": {
+    "id": "recipe-unpackagebiofuel-c",
+    "displayName": "Unpackage Liquid Biofuel",
+    "buildingId": "packager",
+    "isAlternate": false,
+    "durationSeconds": 2,
+    "inputs": [
+      {
+        "itemId": "packaged-liquid-biofuel",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "liquid-biofuel",
+        "amountPerCycle": 0.002
+      },
+      {
+        "itemId": "empty-canister",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-unpackagefuel-c": {
+    "id": "recipe-unpackagefuel-c",
+    "displayName": "Unpackage Fuel",
+    "buildingId": "packager",
+    "isAlternate": false,
+    "durationSeconds": 2,
+    "inputs": [
+      {
+        "itemId": "packaged-fuel",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "fuel",
+        "amountPerCycle": 0.002
+      },
+      {
+        "itemId": "empty-canister",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-unpackagenitricacid-c": {
+    "id": "recipe-unpackagenitricacid-c",
+    "displayName": "Unpackage Nitric Acid",
+    "buildingId": "packager",
+    "isAlternate": false,
+    "durationSeconds": 3,
+    "inputs": [
+      {
+        "itemId": "packaged-nitric-acid",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "nitric-acid",
+        "amountPerCycle": 0.001
+      },
+      {
+        "itemId": "empty-fluid-tank",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-unpackagenitrogen-c": {
+    "id": "recipe-unpackagenitrogen-c",
+    "displayName": "Unpackage Nitrogen Gas",
+    "buildingId": "packager",
+    "isAlternate": false,
+    "durationSeconds": 1,
+    "inputs": [
+      {
+        "itemId": "packaged-nitrogen-gas",
+        "amountPerCycle": 0.001
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "nitrogen-gas",
+        "amountPerCycle": 0.004
+      },
+      {
+        "itemId": "empty-fluid-tank",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-unpackageoil-c": {
+    "id": "recipe-unpackageoil-c",
+    "displayName": "Unpackage Oil",
+    "buildingId": "packager",
+    "isAlternate": false,
+    "durationSeconds": 2,
+    "inputs": [
+      {
+        "itemId": "packaged-oil",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "crude-oil",
+        "amountPerCycle": 0.002
+      },
+      {
+        "itemId": "empty-canister",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-unpackageoilresidue-c": {
+    "id": "recipe-unpackageoilresidue-c",
+    "displayName": "Unpackage Heavy Oil Residue",
+    "buildingId": "packager",
+    "isAlternate": false,
+    "durationSeconds": 6,
+    "inputs": [
+      {
+        "itemId": "packaged-heavy-oil-residue",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "heavy-oil-residue",
+        "amountPerCycle": 0.002
+      },
+      {
+        "itemId": "empty-canister",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-unpackagesulfuricacid-c": {
+    "id": "recipe-unpackagesulfuricacid-c",
+    "displayName": "Unpackage Sulfuric Acid",
+    "buildingId": "packager",
+    "isAlternate": false,
+    "durationSeconds": 1,
+    "inputs": [
+      {
+        "itemId": "packaged-sulfuric-acid",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "sulfuric-acid",
+        "amountPerCycle": 0.001
+      },
+      {
+        "itemId": "empty-canister",
+        "amountPerCycle": 1
+      }
+    ]
+  },
+  "recipe-unpackageturbofuel-c": {
+    "id": "recipe-unpackageturbofuel-c",
+    "displayName": "Unpackage Turbofuel",
+    "buildingId": "packager",
+    "isAlternate": false,
+    "durationSeconds": 6,
+    "inputs": [
+      {
+        "itemId": "packaged-turbofuel",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "turbofuel",
+        "amountPerCycle": 0.002
+      },
+      {
+        "itemId": "empty-canister",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-unpackagewater-c": {
+    "id": "recipe-unpackagewater-c",
+    "displayName": "Unpackage Water",
+    "buildingId": "packager",
+    "isAlternate": false,
+    "durationSeconds": 1,
+    "inputs": [
+      {
+        "itemId": "packaged-water",
+        "amountPerCycle": 2
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "water",
+        "amountPerCycle": 0.002
+      },
+      {
+        "itemId": "empty-canister",
+        "amountPerCycle": 2
+      }
+    ]
+  },
+  "recipe-uraniumcell-c": {
+    "id": "recipe-uraniumcell-c",
+    "displayName": "Encased Uranium Cell",
+    "buildingId": "blender",
+    "isAlternate": false,
+    "durationSeconds": 12,
+    "inputs": [
+      {
+        "itemId": "uranium",
+        "amountPerCycle": 10
+      },
+      {
+        "itemId": "concrete",
+        "amountPerCycle": 3
+      },
+      {
+        "itemId": "sulfuric-acid",
+        "amountPerCycle": 0.008
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "encased-uranium-cell",
+        "amountPerCycle": 5
+      },
+      {
+        "itemId": "sulfuric-acid",
+        "amountPerCycle": 0.002
+      }
+    ]
+  },
+  "recipe-wire-c": {
+    "id": "recipe-wire-c",
+    "displayName": "Wire",
+    "buildingId": "constructor-bldg",
+    "isAlternate": false,
+    "durationSeconds": 4,
+    "inputs": [
+      {
+        "itemId": "copper-ingot",
+        "amountPerCycle": 1
+      }
+    ],
+    "outputs": [
+      {
+        "itemId": "wire",
+        "amountPerCycle": 2
+      }
+    ]
+  }
+}

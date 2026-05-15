@@ -24,6 +24,9 @@
     "noFallthroughCasesInSwitch": true,
     "noImplicitOverride": true,
 
+    /* JSON modules (for src/data/*.json) */
+    "resolveJsonModule": true,
+
     /* Path alias (no baseUrl needed with moduleResolution: bundler) */
     "paths": { "@/*": ["./src/*"] },
 

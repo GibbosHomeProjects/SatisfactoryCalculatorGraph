@@ -1,16 +1,16 @@
 import { useComputed } from "@/graph/useComputed";
 import { useGraphStore } from "@/graph/store";
-import { sampleGameData } from "@/data/sample";
+import { gameData } from "@/data";
 import { summarise } from "@/engine/summarise";
 
 export default function SummaryBar() {
   const graph = useGraphStore((s) => s.graph);
   const res = useComputed();
-  const sum = summarise(sampleGameData, graph, res);
+  const sum = summarise(gameData, graph, res);
 
   const raw =
     Object.entries(sum.rawInputsPerMin)
-      .map(([k, v]) => `${sampleGameData.items[k]?.displayName ?? k} ${v.toFixed(0)}/min`)
+      .map(([k, v]) => `${gameData.items[k]?.displayName ?? k} ${v.toFixed(0)}/min`)
       .join(" · ") || "—";
 
   return (

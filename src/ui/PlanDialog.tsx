@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { sampleGameData } from "@/data/sample";
+import { gameData } from "@/data";
 import { useGraphStore } from "@/graph/store";
 import { planChainFor } from "@/engine/planner";
 
@@ -11,7 +11,7 @@ export default function PlanDialog({ open, onClose }: Props) {
 
   const candidates = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return Object.values(sampleGameData.items)
+    return Object.values(gameData.items)
       .filter((i) => i.displayName.toLowerCase().includes(q))
       .sort((a, b) => a.displayName.localeCompare(b.displayName));
   }, [query]);
@@ -20,7 +20,7 @@ export default function PlanDialog({ open, onClose }: Props) {
 
   const onPick = (itemId: string) => {
     const store = useGraphStore.getState();
-    const plan = planChainFor(sampleGameData, store.graph, itemId);
+    const plan = planChainFor(gameData, store.graph, itemId);
     setWarnings(plan.warnings);
     for (const n of plan.newNodes) store.addNodeRaw(n);
     for (const e of plan.newEdges) store.addEdgeRaw(e);

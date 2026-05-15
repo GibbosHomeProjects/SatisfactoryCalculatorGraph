@@ -11,7 +11,7 @@ import {
 } from "@xyflow/react";
 import "@xyflow/react/dist/style.css";
 import { useGraphStore } from "./store";
-import { sampleGameData } from "@/data/sample";
+import { gameData } from "@/data";
 import { canConnect } from "./validation";
 import MinerNode from "./nodes/MinerNode";
 import WaterExtractorNode from "./nodes/WaterExtractorNode";
@@ -43,7 +43,7 @@ const nodeDefaults: Record<string, AddNodeArg> = {
     satellites: ["normal"],
     clockPct: 100,
   },
-  machine: { kind: "machine", recipeId: "recipe-iron-ingot", clockPct: 100, sloopsUsed: 0 },
+  machine: { kind: "machine", recipeId: "recipe-ingotiron-c", clockPct: 100, sloopsUsed: 0 },
   sink: { kind: "sink", couponsAlreadyPurchased: 0 },
 };
 
@@ -103,7 +103,7 @@ export default function Canvas() {
 
   const isValidConnection = useCallback((c: Connection | { source: string; target: string }) => {
     if (!c.source || !c.target) return false;
-    return canConnect(sampleGameData, useGraphStore.getState().graph, c.source, c.target).ok;
+    return canConnect(gameData, useGraphStore.getState().graph, c.source, c.target).ok;
   }, []);
 
   const onDragOver = useCallback((e: React.DragEvent) => {

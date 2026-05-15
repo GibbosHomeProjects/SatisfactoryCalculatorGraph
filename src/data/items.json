@@ -1,0 +1,1050 @@
+{
+  "adaptive-control-unit": {
+    "id": "adaptive-control-unit",
+    "displayName": "Adaptive Control Unit",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 86120,
+    "stackSize": 50
+  },
+  "ai-limiter": {
+    "id": "ai-limiter",
+    "displayName": "AI Limiter",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 920,
+    "stackSize": 100
+  },
+  "alclad-aluminum-sheet": {
+    "id": "alclad-aluminum-sheet",
+    "displayName": "Alclad Aluminum Sheet",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 266,
+    "stackSize": 200
+  },
+  "alien-dna-capsule": {
+    "id": "alien-dna-capsule",
+    "displayName": "Alien DNA Capsule",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 0,
+    "stackSize": 50
+  },
+  "alien-protein": {
+    "id": "alien-protein",
+    "displayName": "Alien Protein",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 0,
+    "stackSize": 100
+  },
+  "alumina-solution": {
+    "id": "alumina-solution",
+    "displayName": "Alumina Solution",
+    "iconUrl": "",
+    "form": "fluid",
+    "sinkPoints": 20000,
+    "stackSize": 50000
+  },
+  "aluminum-casing": {
+    "id": "aluminum-casing",
+    "displayName": "Aluminum Casing",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 393,
+    "stackSize": 200
+  },
+  "aluminum-ingot": {
+    "id": "aluminum-ingot",
+    "displayName": "Aluminum Ingot",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 131,
+    "stackSize": 100
+  },
+  "aluminum-scrap": {
+    "id": "aluminum-scrap",
+    "displayName": "Aluminum Scrap",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 27,
+    "stackSize": 500
+  },
+  "assembly-director-system": {
+    "id": "assembly-director-system",
+    "displayName": "Assembly Director System",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 543632,
+    "stackSize": 50
+  },
+  "automated-wiring": {
+    "id": "automated-wiring",
+    "displayName": "Automated Wiring",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 1440,
+    "stackSize": 50
+  },
+  "battery": {
+    "id": "battery",
+    "displayName": "Battery",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 465,
+    "stackSize": 200
+  },
+  "bauxite": {
+    "id": "bauxite",
+    "displayName": "Bauxite",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 8,
+    "stackSize": 100
+  },
+  "beacon": {
+    "id": "beacon",
+    "displayName": "Beacon",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 320,
+    "stackSize": 100
+  },
+  "biomass": {
+    "id": "biomass",
+    "displayName": "Biomass",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 12,
+    "stackSize": 200
+  },
+  "black-powder": {
+    "id": "black-powder",
+    "displayName": "Black Powder",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 14,
+    "stackSize": 200
+  },
+  "blue-power-slug": {
+    "id": "blue-power-slug",
+    "displayName": "Blue Power Slug",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 0,
+    "stackSize": 50
+  },
+  "cable": {
+    "id": "cable",
+    "displayName": "Cable",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 24,
+    "stackSize": 200
+  },
+  "caterium-ingot": {
+    "id": "caterium-ingot",
+    "displayName": "Caterium Ingot",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 42,
+    "stackSize": 100
+  },
+  "caterium-ore": {
+    "id": "caterium-ore",
+    "displayName": "Caterium Ore",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 7,
+    "stackSize": 100
+  },
+  "circuit-board": {
+    "id": "circuit-board",
+    "displayName": "Circuit Board",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 696,
+    "stackSize": 200
+  },
+  "cluster-nobelisk": {
+    "id": "cluster-nobelisk",
+    "displayName": "Cluster Nobelisk",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 1376,
+    "stackSize": 50
+  },
+  "coal": {
+    "id": "coal",
+    "displayName": "Coal",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 3,
+    "stackSize": 100
+  },
+  "color-cartridge": {
+    "id": "color-cartridge",
+    "displayName": "Color Cartridge",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 10,
+    "stackSize": 200
+  },
+  "compacted-coal": {
+    "id": "compacted-coal",
+    "displayName": "Compacted Coal",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 28,
+    "stackSize": 100
+  },
+  "computer": {
+    "id": "computer",
+    "displayName": "Computer",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 17260,
+    "stackSize": 50
+  },
+  "concrete": {
+    "id": "concrete",
+    "displayName": "Concrete",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 12,
+    "stackSize": 500
+  },
+  "cooling-system": {
+    "id": "cooling-system",
+    "displayName": "Cooling System",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 12006,
+    "stackSize": 100
+  },
+  "copper-ingot": {
+    "id": "copper-ingot",
+    "displayName": "Copper Ingot",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 6,
+    "stackSize": 100
+  },
+  "copper-ore": {
+    "id": "copper-ore",
+    "displayName": "Copper Ore",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 3,
+    "stackSize": 100
+  },
+  "copper-powder": {
+    "id": "copper-powder",
+    "displayName": "Copper Powder",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 72,
+    "stackSize": 500
+  },
+  "copper-sheet": {
+    "id": "copper-sheet",
+    "displayName": "Copper Sheet",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 24,
+    "stackSize": 200
+  },
+  "crude-oil": {
+    "id": "crude-oil",
+    "displayName": "Crude Oil",
+    "iconUrl": "",
+    "form": "fluid",
+    "sinkPoints": 30000,
+    "stackSize": 50000
+  },
+  "crystal-oscillator": {
+    "id": "crystal-oscillator",
+    "displayName": "Crystal Oscillator",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 3072,
+    "stackSize": 100
+  },
+  "electromagnetic-control-rod": {
+    "id": "electromagnetic-control-rod",
+    "displayName": "Electromagnetic Control Rod",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 2560,
+    "stackSize": 100
+  },
+  "empty-canister": {
+    "id": "empty-canister",
+    "displayName": "Empty Canister",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 60,
+    "stackSize": 100
+  },
+  "empty-fluid-tank": {
+    "id": "empty-fluid-tank",
+    "displayName": "Empty Fluid Tank",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 225,
+    "stackSize": 100
+  },
+  "encased-industrial-beam": {
+    "id": "encased-industrial-beam",
+    "displayName": "Encased Industrial Beam",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 632,
+    "stackSize": 100
+  },
+  "encased-plutonium-cell": {
+    "id": "encased-plutonium-cell",
+    "displayName": "Encased Plutonium Cell",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 0,
+    "stackSize": 200
+  },
+  "encased-uranium-cell": {
+    "id": "encased-uranium-cell",
+    "displayName": "Encased Uranium Cell",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 147,
+    "stackSize": 200
+  },
+  "explosive-rebar": {
+    "id": "explosive-rebar",
+    "displayName": "Explosive Rebar",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 360,
+    "stackSize": 100
+  },
+  "fabric": {
+    "id": "fabric",
+    "displayName": "Fabric",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 140,
+    "stackSize": 100
+  },
+  "flower-petals": {
+    "id": "flower-petals",
+    "displayName": "Flower Petals",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 10,
+    "stackSize": 500
+  },
+  "fuel": {
+    "id": "fuel",
+    "displayName": "Fuel",
+    "iconUrl": "",
+    "form": "fluid",
+    "sinkPoints": 75000,
+    "stackSize": 50000
+  },
+  "fused-modular-frame": {
+    "id": "fused-modular-frame",
+    "displayName": "Fused Modular Frame",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 62840,
+    "stackSize": 50
+  },
+  "gas-filter": {
+    "id": "gas-filter",
+    "displayName": "Gas Filter",
+    "iconUrl": "",
+    "form": "gas",
+    "sinkPoints": 830,
+    "stackSize": 50
+  },
+  "gas-nobelisk": {
+    "id": "gas-nobelisk",
+    "displayName": "Gas Nobelisk",
+    "iconUrl": "",
+    "form": "gas",
+    "sinkPoints": 544,
+    "stackSize": 50
+  },
+  "hatcher-remains": {
+    "id": "hatcher-remains",
+    "displayName": "Hatcher Remains",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 0,
+    "stackSize": 50
+  },
+  "heat-sink": {
+    "id": "heat-sink",
+    "displayName": "Heat Sink",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 2804,
+    "stackSize": 100
+  },
+  "heavy-modular-frame": {
+    "id": "heavy-modular-frame",
+    "displayName": "Heavy Modular Frame",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 11520,
+    "stackSize": 50
+  },
+  "heavy-oil-residue": {
+    "id": "heavy-oil-residue",
+    "displayName": "Heavy Oil Residue",
+    "iconUrl": "",
+    "form": "fluid",
+    "sinkPoints": 30000,
+    "stackSize": 50000
+  },
+  "high-speed-connector": {
+    "id": "high-speed-connector",
+    "displayName": "High-Speed Connector",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 3776,
+    "stackSize": 100
+  },
+  "hog-remains": {
+    "id": "hog-remains",
+    "displayName": "Hog Remains",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 0,
+    "stackSize": 50
+  },
+  "homing-rifle-ammo": {
+    "id": "homing-rifle-ammo",
+    "displayName": "Homing Rifle Ammo",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 855,
+    "stackSize": 500
+  },
+  "iodine-infused-filter": {
+    "id": "iodine-infused-filter",
+    "displayName": "Iodine Infused Filter",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 2718,
+    "stackSize": 50
+  },
+  "iron-ingot": {
+    "id": "iron-ingot",
+    "displayName": "Iron Ingot",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 2,
+    "stackSize": 100
+  },
+  "iron-ore": {
+    "id": "iron-ore",
+    "displayName": "Iron Ore",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 1,
+    "stackSize": 100
+  },
+  "iron-plate": {
+    "id": "iron-plate",
+    "displayName": "Iron Plate",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 6,
+    "stackSize": 200
+  },
+  "iron-rebar": {
+    "id": "iron-rebar",
+    "displayName": "Iron Rebar",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 8,
+    "stackSize": 100
+  },
+  "iron-rod": {
+    "id": "iron-rod",
+    "displayName": "Iron Rod",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 4,
+    "stackSize": 200
+  },
+  "leaves": {
+    "id": "leaves",
+    "displayName": "Leaves",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 3,
+    "stackSize": 500
+  },
+  "limestone": {
+    "id": "limestone",
+    "displayName": "Limestone",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 2,
+    "stackSize": 100
+  },
+  "liquid-biofuel": {
+    "id": "liquid-biofuel",
+    "displayName": "Liquid Biofuel",
+    "iconUrl": "",
+    "form": "fluid",
+    "sinkPoints": 261000,
+    "stackSize": 50000
+  },
+  "magnetic-field-generator": {
+    "id": "magnetic-field-generator",
+    "displayName": "Magnetic Field Generator",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 15650,
+    "stackSize": 50
+  },
+  "modular-engine": {
+    "id": "modular-engine",
+    "displayName": "Modular Engine",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 9960,
+    "stackSize": 50
+  },
+  "modular-frame": {
+    "id": "modular-frame",
+    "displayName": "Modular Frame",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 408,
+    "stackSize": 50
+  },
+  "motor": {
+    "id": "motor",
+    "displayName": "Motor",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 1520,
+    "stackSize": 50
+  },
+  "mycelia": {
+    "id": "mycelia",
+    "displayName": "Mycelia",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 10,
+    "stackSize": 200
+  },
+  "nitric-acid": {
+    "id": "nitric-acid",
+    "displayName": "Nitric Acid",
+    "iconUrl": "",
+    "form": "fluid",
+    "sinkPoints": 94000,
+    "stackSize": 50000
+  },
+  "nitrogen-gas": {
+    "id": "nitrogen-gas",
+    "displayName": "Nitrogen Gas",
+    "iconUrl": "",
+    "form": "gas",
+    "sinkPoints": 10000,
+    "stackSize": 50000
+  },
+  "nobelisk": {
+    "id": "nobelisk",
+    "displayName": "Nobelisk",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 152,
+    "stackSize": 50
+  },
+  "non-fissile-uranium": {
+    "id": "non-fissile-uranium",
+    "displayName": "Non-fissile Uranium",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 0,
+    "stackSize": 500
+  },
+  "nuclear-pasta": {
+    "id": "nuclear-pasta",
+    "displayName": "Nuclear Pasta",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 543424,
+    "stackSize": 50
+  },
+  "nuke-nobelisk": {
+    "id": "nuke-nobelisk",
+    "displayName": "Nuke Nobelisk",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 19600,
+    "stackSize": 50
+  },
+  "packaged-alumina-solution": {
+    "id": "packaged-alumina-solution",
+    "displayName": "Packaged Alumina Solution",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 160,
+    "stackSize": 100
+  },
+  "packaged-fuel": {
+    "id": "packaged-fuel",
+    "displayName": "Packaged Fuel",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 270,
+    "stackSize": 100
+  },
+  "packaged-heavy-oil-residue": {
+    "id": "packaged-heavy-oil-residue",
+    "displayName": "Packaged Heavy Oil Residue",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 180,
+    "stackSize": 100
+  },
+  "packaged-liquid-biofuel": {
+    "id": "packaged-liquid-biofuel",
+    "displayName": "Packaged Liquid Biofuel",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 370,
+    "stackSize": 100
+  },
+  "packaged-nitric-acid": {
+    "id": "packaged-nitric-acid",
+    "displayName": "Packaged Nitric Acid",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 412,
+    "stackSize": 100
+  },
+  "packaged-nitrogen-gas": {
+    "id": "packaged-nitrogen-gas",
+    "displayName": "Packaged Nitrogen Gas",
+    "iconUrl": "",
+    "form": "gas",
+    "sinkPoints": 312,
+    "stackSize": 100
+  },
+  "packaged-oil": {
+    "id": "packaged-oil",
+    "displayName": "Packaged Oil",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 180,
+    "stackSize": 100
+  },
+  "packaged-sulfuric-acid": {
+    "id": "packaged-sulfuric-acid",
+    "displayName": "Packaged Sulfuric Acid",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 152,
+    "stackSize": 100
+  },
+  "packaged-turbofuel": {
+    "id": "packaged-turbofuel",
+    "displayName": "Packaged Turbofuel",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 570,
+    "stackSize": 100
+  },
+  "packaged-water": {
+    "id": "packaged-water",
+    "displayName": "Packaged Water",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 130,
+    "stackSize": 100
+  },
+  "petroleum-coke": {
+    "id": "petroleum-coke",
+    "displayName": "Petroleum Coke",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 20,
+    "stackSize": 200
+  },
+  "plasma-spitter-remains": {
+    "id": "plasma-spitter-remains",
+    "displayName": "Plasma Spitter Remains",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 0,
+    "stackSize": 50
+  },
+  "plastic": {
+    "id": "plastic",
+    "displayName": "Plastic",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 75,
+    "stackSize": 200
+  },
+  "plutonium-fuel-rod": {
+    "id": "plutonium-fuel-rod",
+    "displayName": "Plutonium Fuel Rod",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 153184,
+    "stackSize": 50
+  },
+  "plutonium-pellet": {
+    "id": "plutonium-pellet",
+    "displayName": "Plutonium Pellet",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 0,
+    "stackSize": 100
+  },
+  "polymer-resin": {
+    "id": "polymer-resin",
+    "displayName": "Polymer Resin",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 12,
+    "stackSize": 200
+  },
+  "portable-miner": {
+    "id": "portable-miner",
+    "displayName": "Portable Miner",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 56,
+    "stackSize": 1
+  },
+  "power-shard": {
+    "id": "power-shard",
+    "displayName": "Power Shard",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 0,
+    "stackSize": 100
+  },
+  "pressure-conversion-cube": {
+    "id": "pressure-conversion-cube",
+    "displayName": "Pressure Conversion Cube",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 257312,
+    "stackSize": 50
+  },
+  "pulse-nobelisk": {
+    "id": "pulse-nobelisk",
+    "displayName": "Pulse Nobelisk",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 1533,
+    "stackSize": 50
+  },
+  "purple-power-slug": {
+    "id": "purple-power-slug",
+    "displayName": "Purple Power Slug",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 0,
+    "stackSize": 50
+  },
+  "quartz-crystal": {
+    "id": "quartz-crystal",
+    "displayName": "Quartz Crystal",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 50,
+    "stackSize": 200
+  },
+  "quickwire": {
+    "id": "quickwire",
+    "displayName": "Quickwire",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 17,
+    "stackSize": 500
+  },
+  "radio-control-unit": {
+    "id": "radio-control-unit",
+    "displayName": "Radio Control Unit",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 19600,
+    "stackSize": 50
+  },
+  "raw-quartz": {
+    "id": "raw-quartz",
+    "displayName": "Raw Quartz",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 15,
+    "stackSize": 100
+  },
+  "reinforced-iron-plate": {
+    "id": "reinforced-iron-plate",
+    "displayName": "Reinforced Iron Plate",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 120,
+    "stackSize": 100
+  },
+  "rifle-ammo": {
+    "id": "rifle-ammo",
+    "displayName": "Rifle Ammo",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 25,
+    "stackSize": 500
+  },
+  "rotor": {
+    "id": "rotor",
+    "displayName": "Rotor",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 140,
+    "stackSize": 100
+  },
+  "rubber": {
+    "id": "rubber",
+    "displayName": "Rubber",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 60,
+    "stackSize": 200
+  },
+  "sam": {
+    "id": "sam",
+    "displayName": "SAM",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 24,
+    "stackSize": 100
+  },
+  "screw": {
+    "id": "screw",
+    "displayName": "Screw",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 2,
+    "stackSize": 500
+  },
+  "shatter-rebar": {
+    "id": "shatter-rebar",
+    "displayName": "Shatter Rebar",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 332,
+    "stackSize": 100
+  },
+  "silica": {
+    "id": "silica",
+    "displayName": "Silica",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 20,
+    "stackSize": 200
+  },
+  "smart-plating": {
+    "id": "smart-plating",
+    "displayName": "Smart Plating",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 520,
+    "stackSize": 50
+  },
+  "smokeless-powder": {
+    "id": "smokeless-powder",
+    "displayName": "Smokeless Powder",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 58,
+    "stackSize": 100
+  },
+  "solid-biofuel": {
+    "id": "solid-biofuel",
+    "displayName": "Solid Biofuel",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 48,
+    "stackSize": 200
+  },
+  "stator": {
+    "id": "stator",
+    "displayName": "Stator",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 240,
+    "stackSize": 100
+  },
+  "steel-beam": {
+    "id": "steel-beam",
+    "displayName": "Steel Beam",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 64,
+    "stackSize": 200
+  },
+  "steel-ingot": {
+    "id": "steel-ingot",
+    "displayName": "Steel Ingot",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 8,
+    "stackSize": 100
+  },
+  "steel-pipe": {
+    "id": "steel-pipe",
+    "displayName": "Steel Pipe",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 24,
+    "stackSize": 200
+  },
+  "stinger-remains": {
+    "id": "stinger-remains",
+    "displayName": "Stinger Remains",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 0,
+    "stackSize": 50
+  },
+  "stun-rebar": {
+    "id": "stun-rebar",
+    "displayName": "Stun Rebar",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 186,
+    "stackSize": 100
+  },
+  "sulfur": {
+    "id": "sulfur",
+    "displayName": "Sulfur",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 11,
+    "stackSize": 100
+  },
+  "sulfuric-acid": {
+    "id": "sulfuric-acid",
+    "displayName": "Sulfuric Acid",
+    "iconUrl": "",
+    "form": "fluid",
+    "sinkPoints": 16000,
+    "stackSize": 50000
+  },
+  "supercomputer": {
+    "id": "supercomputer",
+    "displayName": "Supercomputer",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 99576,
+    "stackSize": 50
+  },
+  "thermal-propulsion-rocket": {
+    "id": "thermal-propulsion-rocket",
+    "displayName": "Thermal Propulsion Rocket",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 732956,
+    "stackSize": 50
+  },
+  "turbo-motor": {
+    "id": "turbo-motor",
+    "displayName": "Turbo Motor",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 242720,
+    "stackSize": 50
+  },
+  "turbo-rifle-ammo": {
+    "id": "turbo-rifle-ammo",
+    "displayName": "Turbo Rifle Ammo",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 120,
+    "stackSize": 500
+  },
+  "turbofuel": {
+    "id": "turbofuel",
+    "displayName": "Turbofuel",
+    "iconUrl": "",
+    "form": "fluid",
+    "sinkPoints": 225000,
+    "stackSize": 50000
+  },
+  "uranium": {
+    "id": "uranium",
+    "displayName": "Uranium",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 35,
+    "stackSize": 100
+  },
+  "uranium-fuel-rod": {
+    "id": "uranium-fuel-rod",
+    "displayName": "Uranium Fuel Rod",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 44092,
+    "stackSize": 50
+  },
+  "uranium-waste": {
+    "id": "uranium-waste",
+    "displayName": "Uranium Waste",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 0,
+    "stackSize": 500
+  },
+  "versatile-framework": {
+    "id": "versatile-framework",
+    "displayName": "Versatile Framework",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 1176,
+    "stackSize": 50
+  },
+  "water": {
+    "id": "water",
+    "displayName": "Water",
+    "iconUrl": "",
+    "form": "fluid",
+    "sinkPoints": 5000,
+    "stackSize": 50000
+  },
+  "wire": {
+    "id": "wire",
+    "displayName": "Wire",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 6,
+    "stackSize": 500
+  },
+  "wood": {
+    "id": "wood",
+    "displayName": "Wood",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 30,
+    "stackSize": 200
+  },
+  "yellow-power-slug": {
+    "id": "yellow-power-slug",
+    "displayName": "Yellow Power Slug",
+    "iconUrl": "",
+    "form": "solid",
+    "sinkPoints": 0,
+    "stackSize": 50
+  }
+}

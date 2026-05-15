@@ -1,6 +1,6 @@
 import { Handle, Position, type NodeProps } from "@xyflow/react";
 import { useGraphStore } from "../store";
-import { sampleGameData } from "@/data/sample";
+import { gameData } from "@/data";
 import { resourceWellSatelliteOutput } from "@/engine/sources";
 
 export default function ResourceWellNode({ id }: NodeProps) {
@@ -9,12 +9,12 @@ export default function ResourceWellNode({ id }: NodeProps) {
   let total = 0;
   try {
     for (const p of node.satellites) {
-      total += resourceWellSatelliteOutput(sampleGameData, node.itemId, p, node.clockPct);
+      total += resourceWellSatelliteOutput(gameData, node.itemId, p, node.clockPct);
     }
   } catch {
     total = 0;
   }
-  const item = sampleGameData.items[node.itemId];
+  const item = gameData.items[node.itemId];
   return (
     <div className="rounded-lg border border-emerald-300/40 bg-neutral-900/90 p-3 text-sm min-w-[180px]">
       <div className="text-emerald-200 font-semibold">Resource Well</div>

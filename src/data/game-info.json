@@ -1,0 +1,204 @@
+{
+  "version": "1.1",
+  "buildings": {
+    "assembler": {
+      "id": "assembler",
+      "displayName": "Assembler",
+      "category": "assembler",
+      "basePowerMW": 15,
+      "powerIsVariable": false,
+      "somersloopSlots": 2
+    },
+    "awesome-sink": {
+      "id": "awesome-sink",
+      "displayName": "AWESOME Sink",
+      "category": "awesome-sink",
+      "basePowerMW": 30,
+      "powerIsVariable": false,
+      "somersloopSlots": 0
+    },
+    "blender": {
+      "id": "blender",
+      "displayName": "Blender",
+      "category": "blender",
+      "basePowerMW": 75,
+      "powerIsVariable": false,
+      "somersloopSlots": 4
+    },
+    "constructor-bldg": {
+      "id": "constructor-bldg",
+      "displayName": "Constructor",
+      "category": "constructor",
+      "basePowerMW": 4,
+      "powerIsVariable": false,
+      "somersloopSlots": 1
+    },
+    "foundry": {
+      "id": "foundry",
+      "displayName": "Foundry",
+      "category": "foundry",
+      "basePowerMW": 16,
+      "powerIsVariable": false,
+      "somersloopSlots": 2
+    },
+    "manufacturer": {
+      "id": "manufacturer",
+      "displayName": "Manufacturer",
+      "category": "manufacturer",
+      "basePowerMW": 55,
+      "powerIsVariable": false,
+      "somersloopSlots": 4
+    },
+    "miner-mk1": {
+      "id": "miner-mk1",
+      "displayName": "Miner Mk.1",
+      "category": "miner",
+      "basePowerMW": 5,
+      "powerIsVariable": false,
+      "somersloopSlots": 0
+    },
+    "miner-mk2": {
+      "id": "miner-mk2",
+      "displayName": "Miner Mk.2",
+      "category": "miner",
+      "basePowerMW": 12,
+      "powerIsVariable": false,
+      "somersloopSlots": 0
+    },
+    "miner-mk3": {
+      "id": "miner-mk3",
+      "displayName": "Miner Mk.3",
+      "category": "miner",
+      "basePowerMW": 30,
+      "powerIsVariable": false,
+      "somersloopSlots": 0
+    },
+    "oil-pump": {
+      "id": "oil-pump",
+      "displayName": "Oil Extractor",
+      "category": "oil-pump",
+      "basePowerMW": 40,
+      "powerIsVariable": false,
+      "somersloopSlots": 0
+    },
+    "packager": {
+      "id": "packager",
+      "displayName": "Packager",
+      "category": "packager",
+      "basePowerMW": 10,
+      "powerIsVariable": false,
+      "somersloopSlots": 0
+    },
+    "particle-accelerator": {
+      "id": "particle-accelerator",
+      "displayName": "Particle Accelerator",
+      "category": "particle-accelerator",
+      "basePowerMW": 750,
+      "powerIsVariable": true,
+      "somersloopSlots": 4,
+      "variablePowerMW": {
+        "minMW": 250,
+        "maxMW": 1500
+      }
+    },
+    "refinery": {
+      "id": "refinery",
+      "displayName": "Refinery",
+      "category": "refinery",
+      "basePowerMW": 30,
+      "powerIsVariable": false,
+      "somersloopSlots": 2
+    },
+    "resource-well-extractor": {
+      "id": "resource-well-extractor",
+      "displayName": "Resource Well Extractor",
+      "category": "resource-well-extractor",
+      "basePowerMW": 0,
+      "powerIsVariable": false,
+      "somersloopSlots": 0
+    },
+    "resource-well-pressurizer": {
+      "id": "resource-well-pressurizer",
+      "displayName": "Resource Well Pressurizer",
+      "category": "resource-well-pressurizer",
+      "basePowerMW": 150,
+      "powerIsVariable": false,
+      "somersloopSlots": 0
+    },
+    "smelter": {
+      "id": "smelter",
+      "displayName": "Smelter",
+      "category": "smelter",
+      "basePowerMW": 4,
+      "powerIsVariable": false,
+      "somersloopSlots": 1
+    },
+    "water-extractor": {
+      "id": "water-extractor",
+      "displayName": "Water Extractor",
+      "category": "water-extractor",
+      "basePowerMW": 20,
+      "powerIsVariable": false,
+      "somersloopSlots": 0
+    }
+  },
+  "mineableItemIds": [
+    "bauxite",
+    "caterium-ore",
+    "coal",
+    "copper-ore",
+    "iron-ore",
+    "limestone",
+    "raw-quartz",
+    "sam",
+    "sulfur",
+    "uranium"
+  ],
+  "resourceWellItemIds": [
+    "crude-oil",
+    "nitrogen-gas",
+    "water"
+  ],
+  "minerOutputPerMin": {
+    "mk1": {
+      "impure": 30,
+      "normal": 60,
+      "pure": 120
+    },
+    "mk2": {
+      "impure": 60,
+      "normal": 120,
+      "pure": 240
+    },
+    "mk3": {
+      "impure": 120,
+      "normal": 240,
+      "pure": 480
+    }
+  },
+  "beltTierPerMin": {
+    "mk1": 60,
+    "mk2": 120,
+    "mk3": 270,
+    "mk4": 480,
+    "mk5": 780,
+    "mk6": 1200
+  },
+  "pipeTierPerMin": {
+    "mk1": 300,
+    "mk2": 600
+  },
+  "waterExtractorPerMin": 120,
+  "oilPumpPerMin": {
+    "impure": 60,
+    "normal": 120,
+    "pure": 240
+  },
+  "resourceWellSatellitePerMin": {
+    "nitrogen-gas": {
+      "impure": 30,
+      "normal": 60,
+      "pure": 120
+    }
+  }
+}
