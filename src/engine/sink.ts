@@ -14,5 +14,5 @@ export function sinkPointsPerMin(data: GameData, flows: SinkInflow[]): number {
 
 export function couponCost(couponsAlreadyPurchased: number): number {
   if (couponsAlreadyPurchased > 2998) return 249_501_250;
-  return 250 * Math.pow(Math.ceil(couponsAlreadyPurchased / 3) - 1, 2) + 1000;
+  return 250 * Math.pow(Math.floor(couponsAlreadyPurchased / 3), 2) + 1000;
 }
