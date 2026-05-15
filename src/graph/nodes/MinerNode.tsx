@@ -7,6 +7,9 @@ export default function MinerNode({ id }: NodeProps) {
   const node = useGraphStore((s) => s.graph.nodes[id]);
   if (!node || node.kind !== "miner") return null;
   const rate = minerOutput(sampleGameData, node.mk, node.purity, node.clockPct);
+  const raw =
+    sampleGameData.minerOutputPerMin[node.mk][node.purity] * (node.clockPct / 100);
+  const capped = rate < raw;
   const item = sampleGameData.items[node.itemId];
 
   return (
@@ -16,7 +19,17 @@ export default function MinerNode({ id }: NodeProps) {
         {item?.displayName ?? node.itemId} · {node.purity}
       </div>
       <div className="text-xs opacity-80">Clock {node.clockPct}%</div>
-      <div className="text-base mt-1">{rate.toFixed(1)} /min</div>
+      <div className="text-base mt-1">
+        {rate.toFixed(1)} /min
+        {capped && (
+          <span
+            className="ml-1 text-[10px] text-amber-300"
+            title={`Raw rate ${raw.toFixed(1)}/min, capped at Mk6 belt limit (1200/min)`}
+          >
+            (capped)
+          </span>
+        )}
+      </div>
       <Handle type="source" position={Position.Right} />
     </div>
   );
