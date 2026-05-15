@@ -103,8 +103,14 @@ export default function Canvas() {
   );
 
   return (
-    <div onDragOver={onDragOver} onDrop={onDrop} className="flex-1 h-full">
+    <div
+      onDragOver={onDragOver}
+      onDrop={onDrop}
+      className="flex-1 min-w-0 relative"
+      style={{ height: "100%" }}
+    >
     <ReactFlow
+      style={{ width: "100%", height: "100%" }}
       nodes={rfNodes}
       edges={rfEdges}
       nodeTypes={nodeTypes}

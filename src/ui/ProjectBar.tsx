@@ -1,8 +1,10 @@
+import { useMemo } from "react";
 import { useProjectStore } from "@/storage/projects";
 import { exportCurrentProject, importProjectFromFile } from "@/storage/importExport";
 
 export default function ProjectBar() {
-  const projects = useProjectStore((s) => Object.values(s.projects));
+  const projectsMap = useProjectStore((s) => s.projects);
+  const projects = useMemo(() => Object.values(projectsMap), [projectsMap]);
   const current = useProjectStore((s) => s.currentProjectId);
   const ps = useProjectStore.getState();
 
