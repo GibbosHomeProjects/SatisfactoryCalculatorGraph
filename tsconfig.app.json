@@ -22,7 +22,13 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noImplicitOverride": true
+    "noImplicitOverride": true,
+
+    /* Path alias (no baseUrl needed with moduleResolution: bundler) */
+    "paths": { "@/*": ["./src/*"] },
+
+    /* Vitest globals */
+    "types": ["vitest/globals", "@testing-library/jest-dom"]
   },
   "include": ["src"]
 }
