@@ -11,8 +11,16 @@ import {
 import "@xyflow/react/dist/style.css";
 import { useGraphStore } from "./store";
 import MinerNode from "./nodes/MinerNode";
+import WaterExtractorNode from "./nodes/WaterExtractorNode";
+import OilPumpNode from "./nodes/OilPumpNode";
+import ResourceWellNode from "./nodes/ResourceWellNode";
 
-const nodeTypes = { miner: MinerNode };
+const nodeTypes = {
+  miner: MinerNode,
+  "water-extractor": WaterExtractorNode,
+  "oil-pump": OilPumpNode,
+  "resource-well": ResourceWellNode,
+};
 
 export default function Canvas() {
   const graph = useGraphStore((s) => s.graph);
