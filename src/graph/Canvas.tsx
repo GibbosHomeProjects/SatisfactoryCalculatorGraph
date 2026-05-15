@@ -30,9 +30,26 @@ const nodeTypes = {
   sink: AwesomeSinkNode,
 };
 
+type AddNodeArg = Parameters<ReturnType<typeof useGraphStore.getState>["addNode"]>[0];
+
+const nodeDefaults: Record<string, AddNodeArg> = {
+  miner: { kind: "miner", itemId: "iron-ore", mk: "mk1", purity: "normal", clockPct: 100 },
+  "water-extractor": { kind: "water-extractor", clockPct: 100 },
+  "oil-pump": { kind: "oil-pump", purity: "normal", clockPct: 100 },
+  "resource-well": {
+    kind: "resource-well",
+    itemId: "nitrogen-gas",
+    satellites: ["normal"],
+    clockPct: 100,
+  },
+  machine: { kind: "machine", recipeId: "recipe-iron-ingot", clockPct: 100, sloopsUsed: 0 },
+  sink: { kind: "sink", couponsAlreadyPurchased: 0 },
+};
+
 export default function Canvas() {
   const graph = useGraphStore((s) => s.graph);
   const addEdge = useGraphStore((s) => s.addEdge);
+  const addNode = useGraphStore((s) => s.addNode);
   const selectNode = useGraphStore((s) => s.selectNode);
 
   const rfNodes: RFNode[] = useMemo(
@@ -70,7 +87,23 @@ export default function Canvas() {
     return canConnect(sampleGameData, useGraphStore.getState().graph, c.source, c.target).ok;
   }, []);
 
+  const onDragOver = useCallback((e: React.DragEvent) => {
+    e.preventDefault();
+    e.dataTransfer.dropEffect = "copy";
+  }, []);
+
+  const onDrop = useCallback(
+    (e: React.DragEvent) => {
+      e.preventDefault();
+      const kind = e.dataTransfer.getData("application/x-satcalc-kind");
+      const defaults = nodeDefaults[kind];
+      if (defaults) addNode(defaults);
+    },
+    [addNode],
+  );
+
   return (
+    <div onDragOver={onDragOver} onDrop={onDrop} className="flex-1 h-full">
     <ReactFlow
       nodes={rfNodes}
       edges={rfEdges}
@@ -86,5 +119,6 @@ export default function Canvas() {
       <Controls />
       <MiniMap />
     </ReactFlow>
+    </div>
   );
 }
