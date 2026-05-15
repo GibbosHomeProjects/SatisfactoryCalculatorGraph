@@ -1,6 +1,13 @@
 import { create } from "zustand";
 import { v4 as uuid } from "uuid";
-import type { BeltTier, Graph, GraphNode, GraphEdge, PipeTier } from "@/engine/graph";
+import type {
+  BeltTier,
+  Graph,
+  GraphNode,
+  GraphEdge,
+  PipeTier,
+  Position,
+} from "@/engine/graph";
 
 type DistributiveOmit<T, K extends keyof T | string> = T extends unknown ? Omit<T, K> : never;
 type AddNodeInput = DistributiveOmit<GraphNode, "id">;
@@ -13,6 +20,7 @@ type GraphStore = {
   addNodeRaw: (n: GraphNode) => void;
   removeNode: (id: string) => void;
   updateNode: (id: string, patch: Partial<GraphNode>) => void;
+  setNodePosition: (id: string, position: Position) => void;
   addEdge: (e: AddEdgeInput) => string;
   addEdgeRaw: (e: GraphEdge) => void;
   removeEdge: (id: string) => void;
@@ -78,6 +86,18 @@ export const useGraphStore = create<GraphStore>((set) => ({
         edges: s.graph.edges.map((e) => (e.id === id ? { ...e, tier } : e)),
       },
     })),
+
+  setNodePosition: (id, position) =>
+    set((s) => {
+      const cur = s.graph.nodes[id];
+      if (!cur) return s;
+      return {
+        graph: {
+          ...s.graph,
+          nodes: { ...s.graph.nodes, [id]: { ...cur, position } as GraphNode },
+        },
+      };
+    }),
 
   selectNode: (id) => set({ selectedNodeId: id }),
   reset: () => set({ graph: empty(), selectedNodeId: null }),

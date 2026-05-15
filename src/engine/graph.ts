@@ -3,15 +3,18 @@ import type { MinerMk, MinerPurity } from "@/data/types";
 export type BeltTier = "mk1" | "mk2" | "mk3" | "mk4" | "mk5" | "mk6";
 export type PipeTier = "mk1" | "mk2";
 
+export type Position = { x: number; y: number };
+
 export type SourceNode =
-  | { kind: "miner"; id: string; itemId: string; mk: MinerMk; purity: MinerPurity; clockPct: number }
-  | { kind: "water-extractor"; id: string; clockPct: number }
-  | { kind: "oil-pump"; id: string; purity: MinerPurity; clockPct: number }
-  | { kind: "resource-well"; id: string; itemId: string; satellites: MinerPurity[]; clockPct: number };
+  | { kind: "miner"; id: string; position?: Position; itemId: string; mk: MinerMk; purity: MinerPurity; clockPct: number }
+  | { kind: "water-extractor"; id: string; position?: Position; clockPct: number }
+  | { kind: "oil-pump"; id: string; position?: Position; purity: MinerPurity; clockPct: number }
+  | { kind: "resource-well"; id: string; position?: Position; itemId: string; satellites: MinerPurity[]; clockPct: number };
 
 export type MachineNode = {
   kind: "machine";
   id: string;
+  position?: Position;
   recipeId: string;
   clockPct: number;
   sloopsUsed: number;
@@ -20,6 +23,7 @@ export type MachineNode = {
 export type SinkNode = {
   kind: "sink";
   id: string;
+  position?: Position;
   couponsAlreadyPurchased: number;
 };
 
