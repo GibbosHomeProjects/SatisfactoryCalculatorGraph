@@ -1,4 +1,5 @@
 import { useProjectStore } from "@/storage/projects";
+import { exportCurrentProject, importProjectFromFile } from "@/storage/importExport";
 
 export default function ProjectBar() {
   const projects = useProjectStore((s) => Object.values(s.projects));
@@ -46,6 +47,25 @@ export default function ProjectBar() {
       >
         Duplicate
       </button>
+      <button
+        className="px-2 py-1 rounded bg-neutral-800 hover:bg-neutral-700"
+        onClick={() => exportCurrentProject()}
+      >
+        Export
+      </button>
+      <label className="px-2 py-1 rounded bg-neutral-800 hover:bg-neutral-700 cursor-pointer">
+        Import
+        <input
+          type="file"
+          accept=".json"
+          className="hidden"
+          onChange={(e) => {
+            const f = e.target.files?.[0];
+            if (f) importProjectFromFile(f).catch((err) => alert(String(err)));
+            e.target.value = "";
+          }}
+        />
+      </label>
       <button
         className="px-2 py-1 rounded bg-red-900/40 hover:bg-red-900/60"
         onClick={() => {
