@@ -16,6 +16,19 @@ describe("source outputs", () => {
     expect(minerOutput(sampleGameData, "mk1", "impure", 250)).toBe(75);
   });
 
+  it("miner Mk3 pure at 300% caps at 1200/min (Mk6 belt limit)", () => {
+    // raw would be 480 * 3 = 1440, but game caps at 1200
+    expect(minerOutput(sampleGameData, "mk3", "pure", 300)).toBe(1200);
+  });
+
+  it("miner Mk3 pure at 250% = 1200/min (at the cap)", () => {
+    expect(minerOutput(sampleGameData, "mk3", "pure", 250)).toBe(1200);
+  });
+
+  it("miner Mk3 normal at 300% = 720/min (under cap, no clamp)", () => {
+    expect(minerOutput(sampleGameData, "mk3", "normal", 300)).toBe(720);
+  });
+
   it("water extractor at 50% = 60 m^3/min", () => {
     expect(waterExtractorOutput(sampleGameData, 50)).toBe(60);
   });

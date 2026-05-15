@@ -8,7 +8,9 @@ export function minerOutput(
   purity: MinerPurity,
   clockPct: number,
 ): number {
-  return scale(data.minerOutputPerMin[mk][purity], clockPct);
+  // Game caps miner output at the Mk6 belt throughput regardless of clock.
+  const raw = scale(data.minerOutputPerMin[mk][purity], clockPct);
+  return Math.min(raw, data.beltTierPerMin.mk6);
 }
 
 export function waterExtractorOutput(data: GameData, clockPct: number): number {
