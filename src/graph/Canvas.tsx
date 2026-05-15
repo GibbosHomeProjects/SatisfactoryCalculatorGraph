@@ -10,6 +10,8 @@ import {
 } from "@xyflow/react";
 import "@xyflow/react/dist/style.css";
 import { useGraphStore } from "./store";
+import { sampleGameData } from "@/data/sample";
+import { canConnect } from "./validation";
 import MinerNode from "./nodes/MinerNode";
 import WaterExtractorNode from "./nodes/WaterExtractorNode";
 import OilPumpNode from "./nodes/OilPumpNode";
@@ -61,12 +63,18 @@ export default function Canvas() {
     [addEdge],
   );
 
+  const isValidConnection = useCallback((c: Connection | { source: string; target: string }) => {
+    if (!c.source || !c.target) return false;
+    return canConnect(sampleGameData, useGraphStore.getState().graph, c.source, c.target).ok;
+  }, []);
+
   return (
     <ReactFlow
       nodes={rfNodes}
       edges={rfEdges}
       nodeTypes={nodeTypes}
       onConnect={onConnect}
+      isValidConnection={isValidConnection}
       onNodeClick={(_, n) => selectNode(n.id)}
       onPaneClick={() => selectNode(null)}
       fitView
