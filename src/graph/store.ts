@@ -10,9 +10,11 @@ type GraphStore = {
   graph: Graph;
   selectedNodeId: string | null;
   addNode: (n: AddNodeInput) => string;
+  addNodeRaw: (n: GraphNode) => void;
   removeNode: (id: string) => void;
   updateNode: (id: string, patch: Partial<GraphNode>) => void;
   addEdge: (e: AddEdgeInput) => string;
+  addEdgeRaw: (e: GraphEdge) => void;
   removeEdge: (id: string) => void;
   updateEdgeTier: (id: string, tier: BeltTier | PipeTier) => void;
   selectNode: (id: string | null) => void;
@@ -33,6 +35,9 @@ export const useGraphStore = create<GraphStore>((set) => ({
     }));
     return id;
   },
+
+  addNodeRaw: (n) =>
+    set((s) => ({ graph: { ...s.graph, nodes: { ...s.graph.nodes, [n.id]: n } } })),
 
   removeNode: (id) =>
     set((s) => {
@@ -59,6 +64,9 @@ export const useGraphStore = create<GraphStore>((set) => ({
     set((s) => ({ graph: { ...s.graph, edges: [...s.graph.edges, { ...e, id }] } }));
     return id;
   },
+
+  addEdgeRaw: (e) =>
+    set((s) => ({ graph: { ...s.graph, edges: [...s.graph.edges, e] } })),
 
   removeEdge: (id) =>
     set((s) => ({ graph: { ...s.graph, edges: s.graph.edges.filter((e) => e.id !== id) } })),

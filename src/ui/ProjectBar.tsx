@@ -1,14 +1,17 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { useProjectStore } from "@/storage/projects";
 import { exportCurrentProject, importProjectFromFile } from "@/storage/importExport";
+import PlanDialog from "./PlanDialog";
 
 export default function ProjectBar() {
   const projectsMap = useProjectStore((s) => s.projects);
   const projects = useMemo(() => Object.values(projectsMap), [projectsMap]);
   const current = useProjectStore((s) => s.currentProjectId);
   const ps = useProjectStore.getState();
+  const [planOpen, setPlanOpen] = useState(false);
 
   return (
+    <>
     <header className="h-10 flex items-center gap-2 px-3 border-b border-neutral-800 bg-neutral-900/80 text-sm shrink-0">
       <select
         className="bg-neutral-800 rounded px-2 py-1"
@@ -50,6 +53,13 @@ export default function ProjectBar() {
         Duplicate
       </button>
       <button
+        className="px-2 py-1 rounded bg-emerald-700/40 hover:bg-emerald-700/60 border border-emerald-600/40"
+        onClick={() => setPlanOpen(true)}
+        title="Auto-build a chain from existing sources to a target item"
+      >
+        Plan…
+      </button>
+      <button
         className="px-2 py-1 rounded bg-neutral-800 hover:bg-neutral-700"
         onClick={() => exportCurrentProject()}
       >
@@ -77,5 +87,7 @@ export default function ProjectBar() {
         Delete
       </button>
     </header>
+    <PlanDialog open={planOpen} onClose={() => setPlanOpen(false)} />
+    </>
   );
 }
