@@ -2,7 +2,8 @@ import { create } from "zustand";
 import { v4 as uuid } from "uuid";
 import type { BeltTier, Graph, GraphNode, GraphEdge, PipeTier } from "@/engine/graph";
 
-type AddNodeInput = Omit<GraphNode, "id">;
+type DistributiveOmit<T, K extends keyof T | string> = T extends unknown ? Omit<T, K> : never;
+type AddNodeInput = DistributiveOmit<GraphNode, "id">;
 type AddEdgeInput = Omit<GraphEdge, "id">;
 
 type GraphStore = {
