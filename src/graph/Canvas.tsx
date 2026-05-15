@@ -10,6 +10,9 @@ import {
 } from "@xyflow/react";
 import "@xyflow/react/dist/style.css";
 import { useGraphStore } from "./store";
+import MinerNode from "./nodes/MinerNode";
+
+const nodeTypes = { miner: MinerNode };
 
 export default function Canvas() {
   const graph = useGraphStore((s) => s.graph);
@@ -21,8 +24,8 @@ export default function Canvas() {
       Object.values(graph.nodes).map((n, i) => ({
         id: n.id,
         position: { x: (i % 6) * 220, y: Math.floor(i / 6) * 160 },
-        data: { kind: n.kind },
-        type: "default",
+        data: {},
+        type: n.kind,
       })),
     [graph.nodes],
   );
@@ -50,6 +53,7 @@ export default function Canvas() {
     <ReactFlow
       nodes={rfNodes}
       edges={rfEdges}
+      nodeTypes={nodeTypes}
       onConnect={onConnect}
       onNodeClick={(_, n) => selectNode(n.id)}
       onPaneClick={() => selectNode(null)}
