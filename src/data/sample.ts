@@ -1,19 +1,48 @@
 import type { Building, GameData, Item, Recipe } from "./types";
 
 const items: Record<string, Item> = {
-  "iron-ore":   { id: "iron-ore",   displayName: "Iron Ore",   iconUrl: "", form: "solid", sinkPoints: 1,   stackSize: 100 },
+  // Mineable solid resources (placeable on Miner Mk1/Mk2/Mk3).
+  "iron-ore":     { id: "iron-ore",     displayName: "Iron Ore",     iconUrl: "", form: "solid", sinkPoints: 1,   stackSize: 100 },
+  "copper-ore":   { id: "copper-ore",   displayName: "Copper Ore",   iconUrl: "", form: "solid", sinkPoints: 3,   stackSize: 100 },
+  "limestone":    { id: "limestone",    displayName: "Limestone",    iconUrl: "", form: "solid", sinkPoints: 2,   stackSize: 100 },
+  "coal":         { id: "coal",         displayName: "Coal",         iconUrl: "", form: "solid", sinkPoints: 3,   stackSize: 100 },
+  "caterium-ore": { id: "caterium-ore", displayName: "Caterium Ore", iconUrl: "", form: "solid", sinkPoints: 7,   stackSize: 100 },
+  "raw-quartz":   { id: "raw-quartz",   displayName: "Raw Quartz",   iconUrl: "", form: "solid", sinkPoints: 15,  stackSize: 100 },
+  "sulfur":       { id: "sulfur",       displayName: "Sulfur",       iconUrl: "", form: "solid", sinkPoints: 11,  stackSize: 100 },
+  "bauxite":      { id: "bauxite",      displayName: "Bauxite",      iconUrl: "", form: "solid", sinkPoints: 8,   stackSize: 100 },
+  "uranium":      { id: "uranium",      displayName: "Uranium",      iconUrl: "", form: "solid", sinkPoints: 35,  stackSize: 100 },
+  "sam":          { id: "sam",          displayName: "SAM",          iconUrl: "", form: "solid", sinkPoints: 24,  stackSize: 100 },
+
+  // Processed solids used in sample recipes.
   "iron-ingot": { id: "iron-ingot", displayName: "Iron Ingot", iconUrl: "", form: "solid", sinkPoints: 2,   stackSize: 100 },
   "iron-plate": { id: "iron-plate", displayName: "Iron Plate", iconUrl: "", form: "solid", sinkPoints: 6,   stackSize: 100 },
   "iron-rod":   { id: "iron-rod",   displayName: "Iron Rod",   iconUrl: "", form: "solid", sinkPoints: 4,   stackSize: 100 },
   "screw":      { id: "screw",      displayName: "Screw",      iconUrl: "", form: "solid", sinkPoints: 2,   stackSize: 500 },
-  "water":      { id: "water",      displayName: "Water",      iconUrl: "", form: "fluid", sinkPoints: 0,   stackSize: 0 },
-  "crude-oil":  { id: "crude-oil",  displayName: "Crude Oil",  iconUrl: "", form: "fluid", sinkPoints: 0,   stackSize: 0 },
   "plastic":    { id: "plastic",    displayName: "Plastic",    iconUrl: "", form: "solid", sinkPoints: 75,  stackSize: 200 },
   "rubber":     { id: "rubber",     displayName: "Rubber",     iconUrl: "", form: "solid", sinkPoints: 60,  stackSize: 200 },
-  "heavy-oil-residue": { id: "heavy-oil-residue", displayName: "Heavy Oil Residue", iconUrl: "", form: "fluid", sinkPoints: 0, stackSize: 0 },
-  "polymer-resin":     { id: "polymer-resin",     displayName: "Polymer Resin",     iconUrl: "", form: "solid", sinkPoints: 12, stackSize: 200 },
+  "polymer-resin": { id: "polymer-resin", displayName: "Polymer Resin", iconUrl: "", form: "solid", sinkPoints: 12, stackSize: 200 },
+
+  // Fluids and gases.
+  "water":             { id: "water",             displayName: "Water",             iconUrl: "", form: "fluid", sinkPoints: 0,  stackSize: 0 },
+  "crude-oil":         { id: "crude-oil",         displayName: "Crude Oil",         iconUrl: "", form: "fluid", sinkPoints: 0,  stackSize: 0 },
+  "heavy-oil-residue": { id: "heavy-oil-residue", displayName: "Heavy Oil Residue", iconUrl: "", form: "fluid", sinkPoints: 0,  stackSize: 0 },
   "nitrogen-gas":      { id: "nitrogen-gas",      displayName: "Nitrogen Gas",      iconUrl: "", form: "gas",   sinkPoints: 0,  stackSize: 0 },
 };
+
+const mineableItemIds = [
+  "iron-ore",
+  "copper-ore",
+  "limestone",
+  "coal",
+  "caterium-ore",
+  "raw-quartz",
+  "sulfur",
+  "bauxite",
+  "uranium",
+  "sam",
+];
+
+const resourceWellItemIds = ["nitrogen-gas"];
 
 const buildings: Record<string, Building> = {
   "miner-mk1":       { id: "miner-mk1",       displayName: "Miner Mk1",       category: "miner",           basePowerMW: 5,   powerIsVariable: false, somersloopSlots: 0 },
@@ -74,6 +103,8 @@ export const sampleGameData: GameData = {
   items,
   buildings,
   recipes,
+  mineableItemIds,
+  resourceWellItemIds,
   minerOutputPerMin: {
     mk1: { impure: 30,  normal: 60,  pure: 120 },
     mk2: { impure: 60,  normal: 120, pure: 240 },

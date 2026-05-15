@@ -52,8 +52,10 @@ export default function Inspector() {
               value={node.itemId}
               onChange={(e) => update(node.id, { itemId: e.target.value } as never)}
             >
-              {Object.values(sampleGameData.items)
-                .filter((i) => i.form === "solid")
+              {sampleGameData.mineableItemIds
+                .map((id) => sampleGameData.items[id])
+                .filter((i): i is NonNullable<typeof i> => !!i)
+                .sort((a, b) => a.displayName.localeCompare(b.displayName))
                 .map((i) => (
                   <option key={i.id} value={i.id}>
                     {i.displayName}

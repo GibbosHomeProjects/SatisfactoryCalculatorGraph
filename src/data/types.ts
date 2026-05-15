@@ -56,6 +56,10 @@ export type GameData = {
   items: Record<string, Item>;
   buildings: Record<string, Building>;
   recipes: Record<string, Recipe>;
+  /** Items that can be placed on a Miner Mk1/Mk2/Mk3 (solid resource nodes). */
+  mineableItemIds: string[];
+  /** Items that can be extracted by a Resource Well Pressurizer (one entry per fluid/gas well type). */
+  resourceWellItemIds: string[];
   minerOutputPerMin: Record<MinerMk, Record<MinerPurity, number>>;
   beltTierPerMin: Record<"mk1" | "mk2" | "mk3" | "mk4" | "mk5" | "mk6", number>;
   pipeTierPerMin: Record<"mk1" | "mk2", number>;
