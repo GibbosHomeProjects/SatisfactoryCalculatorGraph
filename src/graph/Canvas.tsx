@@ -14,12 +14,16 @@ import MinerNode from "./nodes/MinerNode";
 import WaterExtractorNode from "./nodes/WaterExtractorNode";
 import OilPumpNode from "./nodes/OilPumpNode";
 import ResourceWellNode from "./nodes/ResourceWellNode";
+import MachineNode from "./nodes/MachineNode";
+import AwesomeSinkNode from "./nodes/AwesomeSinkNode";
 
 const nodeTypes = {
   miner: MinerNode,
   "water-extractor": WaterExtractorNode,
   "oil-pump": OilPumpNode,
   "resource-well": ResourceWellNode,
+  machine: MachineNode,
+  sink: AwesomeSinkNode,
 };
 
 export default function Canvas() {
