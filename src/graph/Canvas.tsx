@@ -132,7 +132,16 @@ export default function Canvas() {
       onDragOver={onDragOver}
       onDrop={onDrop}
       className="flex-1 min-w-0 relative"
-      style={{ height: "100%" }}
+      style={{
+        height: "100%",
+        backgroundColor: "#0a0414",
+        backgroundImage:
+          "radial-gradient(600px 300px at 20% 30%, rgba(6, 182, 212, 0.06), transparent 60%)," +
+          "radial-gradient(500px 300px at 80% 70%, rgba(232, 121, 249, 0.06), transparent 60%)," +
+          "linear-gradient(rgba(124, 115, 151, 0.10) 1px, transparent 1px)," +
+          "linear-gradient(90deg, rgba(124, 115, 151, 0.10) 1px, transparent 1px)",
+        backgroundSize: "auto, auto, 24px 24px, 24px 24px",
+      }}
     >
     <ReactFlow
       style={{ width: "100%", height: "100%" }}
