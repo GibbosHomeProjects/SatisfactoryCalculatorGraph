@@ -2,35 +2,39 @@ import { Handle, Position, type NodeProps } from "@xyflow/react";
 import { useGraphStore } from "../store";
 import { gameData } from "@/data";
 import { minerOutput } from "@/engine/sources";
+import { NodeCard } from "./NodeCard";
 
 export default function MinerNode({ id }: NodeProps) {
   const node = useGraphStore((s) => s.graph.nodes[id]);
   if (!node || node.kind !== "miner") return null;
   const rate = minerOutput(gameData, node.mk, node.purity, node.clockPct);
-  const raw =
-    gameData.minerOutputPerMin[node.mk][node.purity] * (node.clockPct / 100);
+  const raw = gameData.minerOutputPerMin[node.mk][node.purity] * (node.clockPct / 100);
   const capped = rate < raw;
   const item = gameData.items[node.itemId];
 
   return (
-    <div className="rounded-lg border border-amber-400/40 bg-neutral-900/90 p-3 text-sm shadow-md min-w-[180px]">
-      <div className="text-amber-300 font-semibold">Miner {node.mk.toUpperCase()}</div>
-      <div className="text-xs opacity-80">
-        {item?.displayName ?? node.itemId} · {node.purity}
-      </div>
-      <div className="text-xs opacity-80">Clock {node.clockPct}%</div>
-      <div className="text-base mt-1">
-        {rate.toFixed(1)} /min
-        {capped && (
-          <span
-            className="ml-1 text-[10px] text-amber-300"
-            title={`Raw rate ${raw.toFixed(1)}/min, capped at Mk6 belt limit (1200/min)`}
-          >
-            (capped)
-          </span>
-        )}
-      </div>
+    <NodeCard
+      nodeId={id}
+      accent="amber"
+      type={`Miner ${node.mk.toUpperCase()}`}
+      name={item?.displayName ?? node.itemId}
+      meta={`${node.purity} · ${node.clockPct}% clock`}
+      rate={
+        <>
+          {rate.toFixed(1)} /min
+          {capped && (
+            <span
+              className="label-mono"
+              title={`Raw rate ${raw.toFixed(1)}/min · capped at Mk6 belt (1200/min)`}
+              style={{ marginLeft: "0.4rem", color: "var(--accent-amber-2)", fontSize: "0.55rem" }}
+            >
+              CAPPED
+            </span>
+          )}
+        </>
+      }
+    >
       <Handle type="source" position={Position.Right} />
-    </div>
+    </NodeCard>
   );
 }

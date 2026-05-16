@@ -2,6 +2,7 @@ import { Handle, Position, type NodeProps } from "@xyflow/react";
 import { useGraphStore } from "../store";
 import { gameData } from "@/data";
 import { resourceWellSatelliteOutput } from "@/engine/sources";
+import { NodeCard } from "./NodeCard";
 
 export default function ResourceWellNode({ id }: NodeProps) {
   const node = useGraphStore((s) => s.graph.nodes[id]);
@@ -16,21 +17,15 @@ export default function ResourceWellNode({ id }: NodeProps) {
   }
   const item = gameData.items[node.itemId];
   return (
-    <div className="rounded-lg border border-emerald-300/40 bg-neutral-900/90 p-3 text-sm min-w-[180px]">
-      <div className="text-emerald-200 font-semibold">Resource Well</div>
-      <div className="text-xs opacity-80">{item?.displayName ?? node.itemId}</div>
-      <div className="text-xs opacity-80">
-        Satellites: {node.satellites.length} · Clock {node.clockPct}%
-      </div>
-      <div className="text-[10px] opacity-70 mt-0.5">
-        {node.satellites.map((p, i) => (
-          <span key={i} className="mr-1 px-1 rounded bg-neutral-800">
-            {p}
-          </span>
-        ))}
-      </div>
-      <div className="text-base mt-1">{total.toFixed(1)} /min</div>
+    <NodeCard
+      nodeId={id}
+      accent="emerald"
+      type="Resource Well"
+      name={item?.displayName ?? node.itemId}
+      meta={`${node.satellites.length} satellites · ${node.clockPct}% clock`}
+      rate={`${total.toFixed(1)} /min`}
+    >
       <Handle type="source" position={Position.Right} />
-    </div>
+    </NodeCard>
   );
 }
