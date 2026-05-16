@@ -1,0 +1,88 @@
+/* Neon/cyber design tokens. All colours, glows, and one-off font-stack
+   references live here so components never hard-code anything visual. */
+
+:root {
+  /* Surfaces */
+  --bg-base-from: #1a0b2e;
+  --bg-base-via:  #0a0414;
+  --bg-base-to:   #06030c;
+  --bg-base:      radial-gradient(120% 70% at 0% 0%, var(--bg-base-from) 0%, var(--bg-base-via) 60%, var(--bg-base-to) 100%);
+  --bg-panel:     rgba(0, 0, 0, 0.25);
+  --surface:      rgba(8, 4, 18, 0.85);
+  --border:       #2b1748;
+  --border-soft:  rgba(124, 115, 151, 0.3);
+
+  /* Text */
+  --text:         #e7e3f5;
+  --text-muted:   #7c7397;
+  --text-faint:   rgba(124, 115, 151, 0.6);
+
+  /* Accents */
+  --accent-cyan:    #06b6d4;
+  --accent-cyan-2:  #67e8f9;
+  --accent-magenta: #c026d3;
+  --accent-magenta-2: #f0abfc;
+  --accent-amber:   #f59e0b;
+  --accent-amber-2: #fbbf24;
+  --accent-green:   #15803d;
+  --accent-green-2: #86efac;
+  --accent-sky:     #0284c7;
+  --accent-sky-2:   #38bdf8;
+  --accent-red:     #ef4444;
+
+  /* Effects */
+  --glow-default:  0 0 14px;
+  --glow-strong:   0 0 22px;
+  --glow-hot:      0 0 22px rgba(232, 121, 249, 0.45);
+
+  /* Typography */
+  --font-display:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono:     ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  /* Numeric formatting (consumers should also add font-variant-numeric: tabular-nums) */
+  --tracking-mono: 0.12em;
+}
+
+html, body, #root { height: 100%; }
+
+body {
+  background: var(--bg-base);
+  background-attachment: fixed;
+  color: var(--text);
+  font-family: var(--font-display);
+}
+
+/* Mono labels reused all over the chrome. */
+.label-mono {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: var(--tracking-mono);
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+/* Tabular-numeric numeric values reused in stats. */
+.num {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Soft hover-glow used on palette items, buttons. */
+.glow-hover { transition: box-shadow 0.15s, border-color 0.15s, color 0.15s; }
+.glow-hover:hover {
+  border-color: rgba(6, 182, 212, 0.5);
+  color: var(--accent-cyan-2);
+}
+
+/* Pulsing hot border for bottleneck nodes. */
+@keyframes hot-pulse {
+  0%, 100% { box-shadow: 0 0 18px rgba(232, 121, 249, 0.35); }
+  50%      { box-shadow: 0 0 28px rgba(232, 121, 249, 0.6); }
+}
+.node-hot {
+  border-color: var(--accent-magenta) !important;
+  animation: hot-pulse 2.5s ease-in-out infinite;
+}
+.node-dim {
+  opacity: 0.55;
+  box-shadow: none !important;
+}
