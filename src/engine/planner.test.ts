@@ -77,6 +77,50 @@ describe("planChainFor", () => {
     expect(edgesIntoPlate[0]!.itemId).toBe("iron-ingot");
   });
 
+  it("smart-default clock: 60 ingot supply for a 30/min recipe -> clock 100", () => {
+    const graph: Graph = {
+      nodes: {
+        m: ironOreMiner("m"),
+        sm: { kind: "machine", id: "sm", recipeId: "recipe-iron-ingot", clockPct: 100, sloopsUsed: 0 },
+      },
+      edges: [{ id: "e0", fromNodeId: "m", toNodeId: "sm", itemId: "iron-ore" }],
+    };
+    const plan = planChainFor(sampleGameData, graph, "iron-plate");
+    const plateMachine = plan.newNodes.find(
+      (n) => n.kind === "machine" && (n as { recipeId: string }).recipeId === "recipe-iron-plate",
+    );
+    expect(plateMachine).toBeDefined();
+    expect((plateMachine as { clockPct: number }).clockPct).toBe(100);
+  });
+
+  it("smart-default clock: 45 ingot supply for a 30/min recipe -> clock 75", () => {
+    // Underclock the miner to 75% -> 45 ore/min -> 45 ingot/min downstream.
+    // (Underclocking the smelter wouldn't help: the engine compensates by
+    // increasing the fractional machine count to absorb the same supply.)
+    const graph: Graph = {
+      nodes: {
+        m: { kind: "miner", id: "m", itemId: "iron-ore", mk: "mk1", purity: "normal", clockPct: 75 },
+        sm: { kind: "machine", id: "sm", recipeId: "recipe-iron-ingot", clockPct: 100, sloopsUsed: 0 },
+      },
+      edges: [{ id: "e0", fromNodeId: "m", toNodeId: "sm", itemId: "iron-ore" }],
+    };
+    const plan = planChainFor(sampleGameData, graph, "iron-plate");
+    const plateMachine = plan.newNodes.find(
+      (n) => n.kind === "machine" && (n as { recipeId: string }).recipeId === "recipe-iron-plate",
+    );
+    // 45 / 30 = 1.5 machines @ 100%; ceil(1.5) = 2 machines; clock = 1.5/2*100 = 75
+    expect((plateMachine as { clockPct: number }).clockPct).toBe(75);
+  });
+
+  it("smart-default clock: zero supply leaves clock at 100", () => {
+    const graph: Graph = { nodes: {}, edges: [] };
+    const plan = planChainFor(sampleGameData, graph, "screw");
+    const screwMachine = plan.newNodes.find(
+      (n) => n.kind === "machine" && (n as { recipeId: string }).recipeId === "recipe-screw",
+    );
+    expect((screwMachine as { clockPct: number }).clockPct).toBe(100);
+  });
+
   it("warns when no source/recipe exists for a required input", () => {
     // Empty graph -> target requiring inputs with no available source-only items
     // among the recipes (plastic needs crude-oil; no oil pump present).
