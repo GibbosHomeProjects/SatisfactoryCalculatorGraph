@@ -35,6 +35,18 @@ describe("graph store", () => {
     expect((node as { clockPct: number }).clockPct).toBe(200);
   });
 
+  it("updateNode patches recipeId on a machine node", () => {
+    const id = useGraphStore.getState().addNode({
+      kind: "machine",
+      recipeId: "recipe-ingotiron-c",
+      clockPct: 100,
+      sloopsUsed: 0,
+    });
+    useGraphStore.getState().updateNode(id, { recipeId: "recipe-steel-ingot" } as never);
+    const node = useGraphStore.getState().graph.nodes[id]!;
+    expect((node as { recipeId: string }).recipeId).toBe("recipe-steel-ingot");
+  });
+
   it("updateEdgeTier updates the tier on an existing edge", () => {
     const s = useGraphStore.getState();
     const a = s.addNode({ kind: "miner", itemId: "iron-ore", mk: "mk1", purity: "normal", clockPct: 100 });

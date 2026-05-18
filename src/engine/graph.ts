@@ -37,6 +37,9 @@ export type GraphEdge = {
   // Tier used for capacity warnings only; defaults applied by the edge view
   // when undefined (mk5 for solid, mk2 for fluid/gas).
   tier?: BeltTier | PipeTier;
+  // Relative weight for splitting output when multiple edges carry the same
+  // item from the same node. Defaults to 1 (equal split).
+  splitRatio?: number;
 };
 
 export type Graph = {

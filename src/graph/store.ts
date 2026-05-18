@@ -25,6 +25,7 @@ type GraphStore = {
   addEdgeRaw: (e: GraphEdge) => void;
   removeEdge: (id: string) => void;
   updateEdgeTier: (id: string, tier: BeltTier | PipeTier) => void;
+  updateEdgeSplitRatio: (id: string, ratio: number) => void;
   selectNode: (id: string | null) => void;
   reset: () => void;
   load: (g: Graph) => void;
@@ -84,6 +85,14 @@ export const useGraphStore = create<GraphStore>((set) => ({
       graph: {
         ...s.graph,
         edges: s.graph.edges.map((e) => (e.id === id ? { ...e, tier } : e)),
+      },
+    })),
+
+  updateEdgeSplitRatio: (id, ratio) =>
+    set((s) => ({
+      graph: {
+        ...s.graph,
+        edges: s.graph.edges.map((e) => (e.id === id ? { ...e, splitRatio: ratio } : e)),
       },
     })),
 

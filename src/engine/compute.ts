@@ -61,15 +61,14 @@ export function compute(data: GameData, graph: Graph): ComputeResult {
       const grouped: Record<string, typeof outgoing> = {};
       for (const e of outgoing) (grouped[e.itemId] ??= []).push(e);
 
-      // Machines and sinks are infinitely scalable consumers: they absorb
-      // whatever they receive. With multiple consumers of the same item, we
-      // split the available output equally across outgoing edges. The user
-      // can later add per-edge weights if needed.
+      // Distribute each item's output across outgoing edges proportionally
+      // to their splitRatio weights. Defaults to equal split (all ratios = 1).
       for (const [itemId, outs] of Object.entries(grouped)) {
         const totalAvailable = updated.outputsPerMin[itemId] ?? 0;
-        const perEdge = outs.length > 0 ? totalAvailable / outs.length : 0;
+        const totalWeight = outs.reduce((sum, e) => sum + (e.splitRatio ?? 1), 0);
         for (const e of outs) {
-          edges[e.id]!.amountPerMin = perEdge;
+          const weight = e.splitRatio ?? 1;
+          edges[e.id]!.amountPerMin = totalWeight > 0 ? (weight / totalWeight) * totalAvailable : 0;
         }
       }
 

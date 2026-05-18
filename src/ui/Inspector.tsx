@@ -1,3 +1,4 @@
+import { useState, useMemo } from "react";
 import { useGraphStore } from "@/graph/store";
 import { useBottleneck } from "@/graph/useBottleneck";
 import { useComputed } from "@/graph/useComputed";
@@ -114,19 +115,8 @@ export default function Inspector() {
 
       {node.kind === "machine" && (
         <>
-          <SelectField
-            label="Recipe"
+          <RecipeSearch
             value={node.recipeId}
-            options={Object.values(gameData.recipes)
-              .sort(
-                (a, b) =>
-                  Number(a.isAlternate) - Number(b.isAlternate) ||
-                  a.displayName.localeCompare(b.displayName),
-              )
-              .map((r) => ({
-                value: r.id,
-                label: `${r.displayName}${r.isAlternate ? " · ALT" : ""}`,
-              }))}
             onChange={(v) => update(node.id, { recipeId: v } as never)}
           />
           <NumField
@@ -239,6 +229,67 @@ function SelectField({
         ))}
       </select>
     </label>
+  );
+}
+
+function RecipeSearch({ value, onChange }: { value: string; onChange: (id: string) => void }) {
+  const [query, setQuery] = useState("");
+
+  const filtered = useMemo(() => {
+    const q = query.toLowerCase();
+    return Object.values(gameData.recipes)
+      .filter((r) => !q || r.displayName.toLowerCase().includes(q))
+      .sort(
+        (a, b) =>
+          Number(a.isAlternate) - Number(b.isAlternate) ||
+          a.displayName.localeCompare(b.displayName),
+      );
+  }, [query]);
+
+  const current = gameData.recipes[value];
+  const building = current ? gameData.buildings[current.buildingId] : undefined;
+
+  const inputStyle = {
+    background: "rgba(0,0,0,0.4)",
+    border: "1px solid rgba(255,255,255,0.08)",
+    padding: "0.35rem 0.5rem",
+    borderRadius: "5px",
+    color: "var(--text)",
+    fontSize: "0.78rem",
+    width: "100%",
+  };
+
+  return (
+    <div className="flex flex-col gap-1">
+      <span className="label-mono">Recipe</span>
+      {building && (
+        <div style={{ fontSize: "0.7rem", color: "var(--text-faint)", marginBottom: "0.1rem" }}>
+          Building: <span style={{ color: "var(--text)" }}>{building.displayName}</span>
+        </div>
+      )}
+      <input
+        type="text"
+        placeholder="Filter…"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        style={inputStyle}
+      />
+      <select
+        size={7}
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        style={{ ...inputStyle, padding: "0" }}
+      >
+        {filtered.map((r) => {
+          const bld = gameData.buildings[r.buildingId];
+          return (
+            <option key={r.id} value={r.id} style={{ padding: "0.2rem 0.4rem" }}>
+              {r.displayName}{r.isAlternate ? " · ALT" : ""}{bld ? ` (${bld.displayName})` : ""}
+            </option>
+          );
+        })}
+      </select>
+    </div>
   );
 }
 

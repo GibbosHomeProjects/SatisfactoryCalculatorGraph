@@ -52,6 +52,24 @@ describe("graph compute", () => {
     expect(res.edges["e2"]!.amountPerMin + res.edges["e3"]!.amountPerMin).toBeCloseTo(60, 5);
   });
 
+  it("weighted split distributes output proportionally to splitRatio", () => {
+    // Mk2 miner at normal purity = 120/min. Route 2/3 to sink A, 1/3 to sink B.
+    const g: Graph = {
+      nodes: {
+        m: { kind: "miner", id: "m", itemId: "iron-ore", mk: "mk2", purity: "normal", clockPct: 100 },
+        a: { kind: "sink", id: "a", couponsAlreadyPurchased: 0 },
+        b: { kind: "sink", id: "b", couponsAlreadyPurchased: 0 },
+      },
+      edges: [
+        { id: "e1", fromNodeId: "m", toNodeId: "a", itemId: "iron-ore", splitRatio: 2 },
+        { id: "e2", fromNodeId: "m", toNodeId: "b", itemId: "iron-ore", splitRatio: 1 },
+      ],
+    };
+    const res = compute(sampleGameData, g);
+    expect(res.edges["e1"]!.amountPerMin).toBeCloseTo(80, 5);
+    expect(res.edges["e2"]!.amountPerMin).toBeCloseTo(40, 5);
+  });
+
   it("machine without inputs produces 0", () => {
     const g: Graph = {
       nodes: {

@@ -29,6 +29,13 @@ function tierOptionsFor(form: string | undefined): string[] {
 export default function FlowEdge(props: EdgeProps) {
   const edge = useGraphStore((s) => s.graph.edges.find((e) => e.id === props.id));
   const updateEdgeTier = useGraphStore((s) => s.updateEdgeTier);
+  const updateEdgeSplitRatio = useGraphStore((s) => s.updateEdgeSplitRatio);
+  const hasSiblings = useGraphStore((s) => {
+    if (!edge) return false;
+    return s.graph.edges.some(
+      (e) => e.id !== props.id && e.fromNodeId === edge.fromNodeId && e.itemId === edge.itemId,
+    );
+  });
   const computed = useComputed().edges[props.id];
   const [path, labelX, labelY] = getBezierPath(props);
   const item = edge ? gameData.items[edge.itemId] : undefined;
@@ -74,6 +81,29 @@ export default function FlowEdge(props: EdgeProps) {
             {item?.displayName ?? edge?.itemId} · {rate.toFixed(0)}/min
           </span>
           {over && <span title={`Exceeds ${tier} capacity (${cap}/min)`}>⚠</span>}
+          {edge && hasSiblings && (
+            <input
+              type="number"
+              title="Split weight (relative share of output)"
+              min={0.1}
+              step={0.1}
+              value={edge.splitRatio ?? 1}
+              onChange={(ev) => {
+                const v = parseFloat(ev.target.value);
+                if (v > 0) updateEdgeSplitRatio(edge.id, v);
+              }}
+              style={{
+                width: "2.8rem",
+                background: "rgba(0,0,0,0.5)",
+                color: "var(--text-faint)",
+                border: `1px solid ${palette.chip}`,
+                borderRadius: "3px",
+                padding: "0 0.2rem",
+                fontSize: "0.66rem",
+                textAlign: "center",
+              }}
+            />
+          )}
           {edge && (
             <select
               className="label-mono"
