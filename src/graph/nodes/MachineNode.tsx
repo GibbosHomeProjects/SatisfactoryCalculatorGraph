@@ -2,6 +2,7 @@ import { Handle, Position, type NodeProps } from "@xyflow/react";
 import { useGraphStore } from "../store";
 import { useComputed } from "../useComputed";
 import { gameData } from "@/data";
+import { NodeCard } from "./NodeCard";
 
 export default function MachineNode({ id }: NodeProps) {
   const node = useGraphStore((s) => s.graph.nodes[id]);
@@ -10,28 +11,30 @@ export default function MachineNode({ id }: NodeProps) {
   const recipe = gameData.recipes[node.recipeId];
   const building = recipe ? gameData.buildings[recipe.buildingId] : undefined;
   const machineCount = computed?.machineCount ?? 0;
+  const firstOutput = recipe?.outputs[0];
+  const rateValue =
+    firstOutput && computed?.outputsPerMin[firstOutput.itemId] !== undefined
+      ? `${computed.outputsPerMin[firstOutput.itemId]!.toFixed(1)} /min`
+      : "—";
 
   return (
-    <div className="rounded-lg border border-emerald-400/40 bg-neutral-900/90 p-3 text-sm min-w-[200px]">
+    <NodeCard
+      nodeId={id}
+      accent="green"
+      type={building?.displayName ?? "Machine"}
+      name={`${recipe?.displayName ?? "(no recipe)"}${recipe?.isAlternate ? " · ALT" : ""}`}
+      meta={
+        <>
+          {machineCount.toFixed(2)} × (ceil {Math.ceil(machineCount)}) · {node.clockPct}% clock ·
+          Sloops {node.sloopsUsed}/{building?.somersloopSlots ?? 0}
+          <br />
+          {(computed?.totalPowerMW ?? 0).toFixed(1)} MW
+        </>
+      }
+      rate={rateValue}
+    >
       <Handle type="target" position={Position.Left} />
-      <div className="text-emerald-300 font-semibold">{building?.displayName ?? "Machine"}</div>
-      <div className="text-xs opacity-80">
-        {recipe?.displayName ?? "(no recipe)"}
-        {recipe?.isAlternate ? " · ALT" : ""}
-      </div>
-      <div className="text-xs opacity-80">
-        Clock {node.clockPct}% · Sloops {node.sloopsUsed}/{building?.somersloopSlots ?? 0}
-      </div>
-      <div className="text-xs mt-1">
-        Machines: {machineCount.toFixed(2)} (ceil {Math.ceil(machineCount)})
-      </div>
-      <div className="text-xs">Power: {(computed?.totalPowerMW ?? 0).toFixed(1)} MW</div>
-      {Object.entries(computed?.outputsPerMin ?? {}).map(([k, v]) => (
-        <div key={k} className="text-xs">
-          {gameData.items[k]?.displayName ?? k}: {v.toFixed(1)}/min
-        </div>
-      ))}
       <Handle type="source" position={Position.Right} />
-    </div>
+    </NodeCard>
   );
 }
