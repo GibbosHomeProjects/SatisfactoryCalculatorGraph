@@ -26,6 +26,7 @@ function sourceItemForms(data: GameData, g: Graph, nodeId: string): Set<string> 
       return forms;
     }
     case "sink":
+    case "output":
       return new Set();
   }
 }
@@ -33,7 +34,7 @@ function sourceItemForms(data: GameData, g: Graph, nodeId: string): Set<string> 
 function targetAcceptsForms(data: GameData, g: Graph, nodeId: string): Set<string> {
   const node = g.nodes[nodeId];
   if (!node) return new Set();
-  if (node.kind === "sink") return new Set(["solid", "fluid", "gas"]);
+  if (node.kind === "sink" || node.kind === "output") return new Set(["solid", "fluid", "gas"]);
   if (node.kind === "machine") {
     const r = data.recipes[node.recipeId];
     if (!r) return new Set(["solid", "fluid", "gas"]);

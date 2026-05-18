@@ -128,6 +128,21 @@ export default function Inspector() {
         </>
       )}
 
+      {node.kind === "output" && (
+        <>
+          <ItemSearch
+            value={node.itemId}
+            onChange={(v) => update(node.id, { itemId: v } as never)}
+          />
+          <NumField
+            label="Target /min (0 = measure only)"
+            value={node.targetRatePerMin}
+            min={0}
+            onChange={(v) => update(node.id, { targetRatePerMin: v } as never)}
+          />
+        </>
+      )}
+
       {node.kind === "sink" && (
         <NumField
           label="Coupons already purchased"
@@ -229,6 +244,52 @@ function SelectField({
         ))}
       </select>
     </label>
+  );
+}
+
+function ItemSearch({ value, onChange }: { value: string; onChange: (id: string) => void }) {
+  const [query, setQuery] = useState("");
+
+  const filtered = useMemo(() => {
+    const q = query.toLowerCase();
+    return Object.values(gameData.items)
+      .filter((i) => !q || i.displayName.toLowerCase().includes(q))
+      .sort((a, b) => a.displayName.localeCompare(b.displayName));
+  }, [query]);
+
+  const inputStyle = {
+    background: "rgba(0,0,0,0.4)",
+    border: "1px solid rgba(255,255,255,0.08)",
+    padding: "0.35rem 0.5rem",
+    borderRadius: "5px",
+    color: "var(--text)",
+    fontSize: "0.78rem",
+    width: "100%",
+  };
+
+  return (
+    <div className="flex flex-col gap-1">
+      <span className="label-mono">Item</span>
+      <input
+        type="text"
+        placeholder="Filter…"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        style={inputStyle}
+      />
+      <select
+        size={7}
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        style={{ ...inputStyle, padding: "0" }}
+      >
+        {filtered.map((i) => (
+          <option key={i.id} value={i.id} style={{ padding: "0.2rem 0.4rem" }}>
+            {i.displayName} ({i.form})
+          </option>
+        ))}
+      </select>
+    </div>
   );
 }
 

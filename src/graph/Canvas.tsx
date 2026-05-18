@@ -19,6 +19,7 @@ import OilPumpNode from "./nodes/OilPumpNode";
 import ResourceWellNode from "./nodes/ResourceWellNode";
 import MachineNode from "./nodes/MachineNode";
 import AwesomeSinkNode from "./nodes/AwesomeSinkNode";
+import OutputNode from "./nodes/OutputNode";
 import FlowEdge from "./edges/FlowEdge";
 
 const edgeTypes = { flow: FlowEdge };
@@ -29,6 +30,7 @@ const nodeTypes = {
   "resource-well": ResourceWellNode,
   machine: MachineNode,
   sink: AwesomeSinkNode,
+  output: OutputNode,
 };
 
 type AddNodeArg = Parameters<ReturnType<typeof useGraphStore.getState>["addNode"]>[0];
@@ -45,6 +47,7 @@ const nodeDefaults: Record<string, AddNodeArg> = {
   },
   machine: { kind: "machine", recipeId: "recipe-ingotiron-c", clockPct: 100, sloopsUsed: 0 },
   sink: { kind: "sink", couponsAlreadyPurchased: 0 },
+  output: { kind: "output", itemId: "iron-plate", targetRatePerMin: 0 },
 };
 
 function gridFallback(i: number) {

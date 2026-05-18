@@ -14,7 +14,10 @@ const SECTIONS: { label: string; items: { kind: string; label: string; color: st
   },
   {
     label: "Output",
-    items: [{ kind: "sink", label: "AWESOME Sink", color: "#f0abfc" }],
+    items: [
+      { kind: "sink", label: "AWESOME Sink", color: "#f0abfc" },
+      { kind: "output", label: "Output", color: "#6ee7b7" },
+    ],
   },
 ];
 

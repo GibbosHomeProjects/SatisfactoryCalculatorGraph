@@ -177,5 +177,15 @@ function evaluateNode(
       }
       return out;
     }
+    case "output": {
+      const actual = supply[node.itemId] ?? 0;
+      out.outputsPerMin[node.itemId] = actual;
+      if (node.targetRatePerMin > 0 && actual < node.targetRatePerMin - 0.01) {
+        out.warnings.push(
+          `Receiving ${actual.toFixed(1)}/min, target is ${node.targetRatePerMin}/min`,
+        );
+      }
+      return out;
+    }
   }
 }

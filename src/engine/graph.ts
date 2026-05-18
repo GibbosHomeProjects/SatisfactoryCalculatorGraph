@@ -27,7 +27,15 @@ export type SinkNode = {
   couponsAlreadyPurchased: number;
 };
 
-export type GraphNode = SourceNode | MachineNode | SinkNode;
+export type OutputNode = {
+  kind: "output";
+  id: string;
+  position?: Position;
+  itemId: string;
+  targetRatePerMin: number;
+};
+
+export type GraphNode = SourceNode | MachineNode | SinkNode | OutputNode;
 
 export type GraphEdge = {
   id: string;
