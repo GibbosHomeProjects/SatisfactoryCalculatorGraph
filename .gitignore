@@ -31,7 +31,8 @@ pnpm-debug.log*
 .env.*
 !.env.example
 
-# Superpowers / brainstorming session artefacts (local only)
+# Claude Code / AI tooling (local only)
+.claude/
 .superpowers/
 
 # Local Satisfactory data working dir (raw Docs.json, extracted icons)
